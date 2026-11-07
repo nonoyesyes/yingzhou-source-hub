@@ -1,0 +1,9 @@
+test_invalid_raw_inputs (__main__.RR1Tests.test_invalid_raw_inputs) ... ok
+test_object_order_does_not_matter (__main__.RR1Tests.test_object_order_does_not_matter) ... ok
+test_positive_vectors (__main__.RR1Tests.test_positive_vectors) ... ok
+test_url_is_not_normalized (__main__.RR1Tests.test_url_is_not_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.195s
+
+OK

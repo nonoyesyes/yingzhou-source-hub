@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "records": 29,
+  "manifest_files": 35,
+  "referenced_files": 21,
+  "production_mode": true,
+  "schema_sha256": "b4a734d673be47527578ea57434ccf5839858de0861a09d5f5d517cff41def5c"
+}

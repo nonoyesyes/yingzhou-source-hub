@@ -1,0 +1,61 @@
+{
+  "scope": "offline archived VOD parsed values; no network or credential values output",
+  "suspected_private_material": [
+    {
+      "repo": "lubin776/tvbox-api-backup",
+      "path": "tvbox/夏夏影视.json",
+      "download_url": "https://raw.githubusercontent.com/lubin776/tvbox-api-backup/main/tvbox/夏夏影视.json",
+      "hits": [
+        {
+          "path": "/sites/27/ext/cookie",
+          "reasons": [
+            "nonempty_cookie_key_value_sequence"
+          ],
+          "value_sha256": "2c1699eea1cb3a03b1c5552949ea3429cc8676f812eac4db8206b91035c2c8a5",
+          "length": 129
+        }
+      ]
+    },
+    {
+      "repo": "hebijunge/tvbox-config",
+      "path": "exports/healthy.json",
+      "download_url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json",
+      "hits": [
+        {
+          "path": "/sites/129/ext/cookie",
+          "reasons": [
+            "nonempty_cookie_key_value_sequence"
+          ],
+          "value_sha256": "4008eeaa424629d1e8632dd68254531b8f3a53b6b66e074f3e9867425dd0b16d",
+          "length": 102
+        }
+      ]
+    },
+    {
+      "repo": "hebijunge/tvbox-config",
+      "path": "exports/pan.json",
+      "download_url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/pan.json",
+      "hits": [
+        {
+          "path": "/sites/14/ext/cookie",
+          "reasons": [
+            "nonempty_cookie_key_value_sequence"
+          ],
+          "value_sha256": "4008eeaa424629d1e8632dd68254531b8f3a53b6b66e074f3e9867425dd0b16d",
+          "length": 102
+        },
+        {
+          "path": "/sites/67/ext/cookie",
+          "reasons": [
+            "nonempty_cookie_key_value_sequence"
+          ],
+          "value_sha256": "1eb0176a3e4d4f7b7d3085aa6beb804fea071fe4bcbf464b29cbe4d51787f375",
+          "length": 186
+        }
+      ]
+    }
+  ],
+  "live_cache_count": 57,
+  "live_cache_bytes": 4437796,
+  "live_cache_hash_mismatches": 0
+}

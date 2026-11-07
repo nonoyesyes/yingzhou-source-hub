@@ -1,0 +1,2535 @@
+{
+  "type": "object",
+  "properties": {
+    "archive_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "byte_count",
+          "sha256"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^archive/"
+          },
+          "byte_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "batch_id": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "batch_id": {
+            "type": "string"
+          },
+          "candidate_entry_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "check_id": {
+            "type": "string"
+          },
+          "check_type": {
+            "type": "string"
+          },
+          "decode_runs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "audio_coverage_ms": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "exit_code": {
+                  "type": "integer"
+                },
+                "joint_coverage_ms": {
+                  "type": "null"
+                },
+                "log_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "run_id": {
+                  "type": "string"
+                },
+                "streams": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "video_coverage_ms": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "audio_coverage_ms",
+                "exit_code",
+                "joint_coverage_ms",
+                "log_refs",
+                "run_id",
+                "streams",
+                "video_coverage_ms"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "entry_match_hint": {
+            "type": "object",
+            "properties": {
+              "entry_locator": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "name_raw": {
+                "type": "string"
+              },
+              "prior_entry_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "source_id": {
+                "type": "string"
+              },
+              "source_snapshot_sha256": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "entry_locator",
+              "name_raw",
+              "prior_entry_id",
+              "source_id",
+              "source_snapshot_sha256",
+              "url"
+            ],
+            "additionalProperties": false
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "errors": {
+            "type": "null"
+          },
+          "evidence_capture": {
+            "type": "object",
+            "properties": {
+              "joint_original_media_clock_proven": {
+                "type": "boolean"
+              },
+              "missing": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "raw_media_retained": {
+                "type": "boolean"
+              },
+              "separate_process_logs_retained": {
+                "type": "boolean"
+              },
+              "truncation_status": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "joint_original_media_clock_proven",
+              "missing",
+              "raw_media_retained",
+              "separate_process_logs_retained",
+              "truncation_status"
+            ],
+            "additionalProperties": false
+          },
+          "evidence_kind": {
+            "enum": [
+              "not_run",
+              "actual_measurement",
+              "historical_summary"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "finished_at": {
+            "type": "string"
+          },
+          "historical_observations": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "audio_streams": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "channels": {
+                          "type": "integer"
+                        },
+                        "codec_name": {
+                          "type": "string"
+                        },
+                        "codec_type": {
+                          "type": "string"
+                        },
+                        "index": {
+                          "type": "integer"
+                        },
+                        "r_frame_rate": {
+                          "type": "string"
+                        },
+                        "sample_rate": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "channels",
+                        "codec_name",
+                        "codec_type",
+                        "index",
+                        "r_frame_rate",
+                        "sample_rate"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "covered_media_duration_ms": {
+                "type": "null"
+              },
+              "decoded_audio_duration_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "decoded_audio_samples": {
+                "type": "null"
+              },
+              "decoded_video_duration_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "decoded_video_frames": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "download_throughput_bps": {
+                "type": "null"
+              },
+              "ffmpeg_exit_code": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "ffprobe_exit_code": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "ffprobe_reported_bitrate_bps": {
+                "type": "null"
+              },
+              "first_decoded_video_frame_ms": {
+                "type": "null"
+              },
+              "first_frame_clock_origin": {
+                "type": "null"
+              },
+              "hls_declared_bandwidth_bps": {
+                "type": "null"
+              },
+              "http_requests": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "body_bytes": {
+                          "type": "integer"
+                        },
+                        "elapsed_ms": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                        },
+                        "redirects": {
+                          "type": "null"
+                        },
+                        "role": {
+                          "type": "string"
+                        },
+                        "status_code": {
+                          "type": "integer"
+                        },
+                        "url_final": {
+                          "type": "string"
+                        },
+                        "url_requested": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "body_bytes",
+                        "elapsed_ms",
+                        "redirects",
+                        "role",
+                        "status_code",
+                        "url_final",
+                        "url_requested"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "input_mode": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "measurement_method": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "observed_wall_clock_window_ms": {
+                "type": "null"
+              },
+              "target_media_duration_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Integer milliseconds, floored after exact coverage union/intersection."
+              },
+              "video_streams": {
+                "anyOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "codec_name": {
+                          "type": "string"
+                        },
+                        "codec_type": {
+                          "type": "string"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "index": {
+                          "type": "integer"
+                        },
+                        "r_frame_rate": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "codec_name",
+                        "codec_type",
+                        "height",
+                        "index",
+                        "r_frame_rate",
+                        "width"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "wall_clock_elapsed_ms": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Integer milliseconds, floored after exact coverage union/intersection."
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "audio_streams",
+              "covered_media_duration_ms",
+              "decoded_audio_duration_ms",
+              "decoded_audio_samples",
+              "decoded_video_duration_ms",
+              "decoded_video_frames",
+              "ffmpeg_exit_code",
+              "ffprobe_exit_code",
+              "http_requests",
+              "input_mode",
+              "measurement_method",
+              "target_media_duration_ms",
+              "video_streams",
+              "wall_clock_elapsed_ms"
+            ],
+            "additionalProperties": false
+          },
+          "null_reasons": {
+            "type": "object",
+            "properties": {
+              "/decode_runs/0/audio_coverage_ms": {
+                "type": "string"
+              },
+              "/decode_runs/0/joint_coverage_ms": {
+                "type": "string"
+              },
+              "/decode_runs/1/joint_coverage_ms": {
+                "type": "string"
+              },
+              "/decode_runs/1/video_coverage_ms": {
+                "type": "string"
+              },
+              "/errors": {
+                "type": "string"
+              },
+              "/metrics/audio_streams": {
+                "type": "string"
+              },
+              "/metrics/covered_media_duration_ms": {
+                "type": "string"
+              },
+              "/metrics/decoded_audio_duration_ms": {
+                "type": "string"
+              },
+              "/metrics/decoded_audio_samples": {
+                "type": "string"
+              },
+              "/metrics/decoded_video_duration_ms": {
+                "type": "string"
+              },
+              "/metrics/decoded_video_frames": {
+                "type": "string"
+              },
+              "/metrics/download_throughput_bps": {
+                "type": "string"
+              },
+              "/metrics/ffmpeg_exit_code": {
+                "type": "string"
+              },
+              "/metrics/ffprobe_exit_code": {
+                "type": "string"
+              },
+              "/metrics/ffprobe_reported_bitrate_bps": {
+                "type": "string"
+              },
+              "/metrics/first_decoded_video_frame_ms": {
+                "type": "string"
+              },
+              "/metrics/first_frame_clock_origin": {
+                "type": "string"
+              },
+              "/metrics/hls_declared_bandwidth_bps": {
+                "type": "string"
+              },
+              "/metrics/http_requests": {
+                "type": "string"
+              },
+              "/metrics/http_requests/0/redirects": {
+                "type": "string"
+              },
+              "/metrics/http_requests/1/redirects": {
+                "type": "string"
+              },
+              "/metrics/http_requests/2/redirects": {
+                "type": "string"
+              },
+              "/metrics/http_requests/3/redirects": {
+                "type": "string"
+              },
+              "/metrics/input_mode": {
+                "type": "string"
+              },
+              "/metrics/measurement_method": {
+                "type": "string"
+              },
+              "/metrics/observed_wall_clock_window_ms": {
+                "type": "string"
+              },
+              "/metrics/video_streams": {
+                "type": "string"
+              },
+              "/metrics/wall_clock_elapsed_ms": {
+                "type": "string"
+              },
+              "/planned_request": {
+                "type": "string"
+              },
+              "/planned_request_revision": {
+                "type": "string"
+              },
+              "/request_revision": {
+                "type": "string"
+              },
+              "/request_used": {
+                "type": "string"
+              },
+              "/request_variant_of": {
+                "type": "string"
+              },
+              "/sample_complete": {
+                "type": "string"
+              },
+              "/source_snapshot_ref": {
+                "type": "string"
+              },
+              "/stages/0/reason_code": {
+                "type": "string"
+              },
+              "/stopped_at_stage": {
+                "type": "string"
+              },
+              "/warnings": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "/metrics/covered_media_duration_ms"
+            ],
+            "additionalProperties": false
+          },
+          "planned_request": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "method",
+                  "url",
+                  "headers",
+                  "options"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "method": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "pattern": "^[!#$%&'*+.^_`|~0-9a-z-]+$"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "options": {
+                    "type": "object",
+                    "maxProperties": 0
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "planned_request_revision": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^rr1:sha256:[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "prior_target_id": {
+            "type": "string"
+          },
+          "processing_chain": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "json_pointer": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "line_1_based": {
+                  "type": "integer"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "json_pointer",
+                "path",
+                "role"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "reason_code": {
+            "type": "string"
+          },
+          "reason_detail": {
+            "type": "string"
+          },
+          "request_revision": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^rr1:sha256:[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "request_used": {
+            "anyOf": [
+              {
+                "type": "object",
+                "required": [
+                  "method",
+                  "url",
+                  "headers",
+                  "options"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "method": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "headers": {
+                    "type": "object",
+                    "propertyNames": {
+                      "pattern": "^[!#$%&'*+.^_`|~0-9a-z-]+$"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "options": {
+                    "type": "object",
+                    "maxProperties": 0
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "request_variant_of": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^rr1:sha256:[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sample_complete": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_snapshot_availability": {
+            "type": "string"
+          },
+          "source_snapshot_ref": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "source_snapshot_sha256": {
+            "type": "string"
+          },
+          "stages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "evidence_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "finished_at": {
+                  "type": "string"
+                },
+                "reason_code": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "stage": {
+                  "type": "string"
+                },
+                "started_at": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "evidence_refs",
+                "finished_at",
+                "reason_code",
+                "stage",
+                "started_at",
+                "status"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "started_at": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "not_tested",
+              "blocked",
+              "unsupported",
+              "incomplete",
+              "fail",
+              "pass",
+              "pass_with_warnings",
+              "cancelled"
+            ]
+          },
+          "stopped_at_stage": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "target_id": {
+            "type": "string"
+          },
+          "target_type": {
+            "enum": [
+              "source",
+              "live_entry",
+              "vod_site"
+            ]
+          },
+          "time_provenance": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "warnings": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "batch_id",
+          "candidate_entry_ids",
+          "check_id",
+          "check_type",
+          "decode_runs",
+          "entry_match_hint",
+          "env_id",
+          "errors",
+          "evidence_capture",
+          "evidence_kind",
+          "evidence_refs",
+          "finished_at",
+          "historical_observations",
+          "limitations",
+          "metrics",
+          "null_reasons",
+          "planned_request",
+          "planned_request_revision",
+          "processing_chain",
+          "reason_code",
+          "reason_detail",
+          "request_revision",
+          "request_used",
+          "request_variant_of",
+          "sample_complete",
+          "source_id",
+          "source_snapshot_availability",
+          "source_snapshot_ref",
+          "source_snapshot_sha256",
+          "stages",
+          "started_at",
+          "status",
+          "stopped_at_stage",
+          "target_id",
+          "target_type",
+          "time_provenance",
+          "warnings"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "deduplication": {
+      "type": "object",
+      "properties": {
+        "live": {
+          "type": "string"
+        },
+        "origins": {
+          "type": "string"
+        },
+        "vod": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "live",
+        "origins",
+        "vod"
+      ],
+      "additionalProperties": false
+    },
+    "environments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "egress": {
+            "type": "object",
+            "properties": {
+              "asn": {
+                "type": "null"
+              },
+              "basis": {
+                "type": "null"
+              },
+              "country": {
+                "type": "null"
+              },
+              "dns_servers": {
+                "type": "null"
+              },
+              "ip_addresses": {
+                "type": "null"
+              },
+              "operator": {
+                "type": "null"
+              },
+              "region": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "asn",
+              "basis",
+              "country",
+              "dns_servers",
+              "ip_addresses",
+              "operator",
+              "region"
+            ],
+            "additionalProperties": false
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "environment_kind": {
+            "type": "string"
+          },
+          "implicit_request_conditions": {
+            "type": "null"
+          },
+          "native_ipv4": {
+            "type": "object",
+            "properties": {
+              "available": {
+                "type": "null"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {}
+              },
+              "verified_at": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "available",
+              "evidence_refs",
+              "verified_at"
+            ],
+            "additionalProperties": false
+          },
+          "native_ipv6": {
+            "type": "object",
+            "properties": {
+              "available": {
+                "type": "null"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {}
+              },
+              "verified_at": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "available",
+              "evidence_refs",
+              "verified_at"
+            ],
+            "additionalProperties": false
+          },
+          "network_limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "null_reasons": {
+            "type": "object",
+            "properties": {
+              "/egress/asn": {
+                "type": "string"
+              },
+              "/egress/basis": {
+                "type": "string"
+              },
+              "/egress/country": {
+                "type": "string"
+              },
+              "/egress/dns_servers": {
+                "type": "string"
+              },
+              "/egress/ip_addresses": {
+                "type": "string"
+              },
+              "/egress/operator": {
+                "type": "string"
+              },
+              "/egress/region": {
+                "type": "string"
+              },
+              "/implicit_request_conditions": {
+                "type": "string"
+              },
+              "/native_ipv4/available": {
+                "type": "string"
+              },
+              "/native_ipv4/verified_at": {
+                "type": "string"
+              },
+              "/native_ipv6/available": {
+                "type": "string"
+              },
+              "/native_ipv6/verified_at": {
+                "type": "string"
+              },
+              "/observed_at": {
+                "type": "string"
+              },
+              "/os": {
+                "type": "string"
+              },
+              "/parameters/batch_byte_budget": {
+                "type": "string"
+              },
+              "/parameters/batch_wall_clock_budget_ms": {
+                "type": "string"
+              },
+              "/parameters/connect_timeout_ms": {
+                "type": "string"
+              },
+              "/parameters/max_redirects": {
+                "type": "string"
+              },
+              "/parameters/max_response_bytes": {
+                "type": "string"
+              },
+              "/parameters/total_timeout_ms": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "/egress/asn",
+              "/egress/basis",
+              "/egress/country",
+              "/egress/dns_servers",
+              "/egress/ip_addresses",
+              "/egress/operator",
+              "/egress/region",
+              "/implicit_request_conditions",
+              "/native_ipv4/available",
+              "/native_ipv4/verified_at",
+              "/native_ipv6/available",
+              "/native_ipv6/verified_at",
+              "/os",
+              "/parameters/batch_byte_budget",
+              "/parameters/batch_wall_clock_budget_ms",
+              "/parameters/connect_timeout_ms",
+              "/parameters/max_redirects",
+              "/parameters/max_response_bytes",
+              "/parameters/total_timeout_ms"
+            ],
+            "additionalProperties": false
+          },
+          "observed_at": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "os": {
+            "type": "null"
+          },
+          "parameters": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "proxy": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "used": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "description",
+              "kind",
+              "used"
+            ],
+            "additionalProperties": false
+          },
+          "time_provenance": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "tools": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          }
+        },
+        "required": [
+          "description",
+          "egress",
+          "env_id",
+          "environment_kind",
+          "implicit_request_conditions",
+          "native_ipv4",
+          "native_ipv6",
+          "network_limitations",
+          "null_reasons",
+          "observed_at",
+          "os",
+          "parameters",
+          "proxy",
+          "time_provenance",
+          "tools"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "live_entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "enum": [
+              "general",
+              "news",
+              "sports",
+              "movies",
+              "series",
+              "documentary",
+              "kids",
+              "music",
+              "education",
+              "culture",
+              "business",
+              "entertainment",
+              "religion",
+              "shopping",
+              "lifestyle",
+              "other",
+              null
+            ]
+          },
+          "channel_key_hint": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "check_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "check_status": {
+            "enum": [
+              "not_tested",
+              "blocked",
+              "unsupported",
+              "incomplete",
+              "fail",
+              "pass",
+              "pass_with_warnings",
+              "cancelled"
+            ]
+          },
+          "content_identity_status": {
+            "const": "not_tested"
+          },
+          "country_code": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$",
+                "description": "ISO 3166-1 alpha-2; dictionary-supported hint, not inferred from URL/script."
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "entry_id": {
+            "type": "string"
+          },
+          "entry_locator": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "name_line": {
+                "type": "integer"
+              },
+              "role": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "epg_url_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "group_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "language_code": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]+)*$",
+                "description": "BCP 47; not inferred from script."
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "logo_url_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "metadata_status": {
+            "type": "object",
+            "properties": {
+              "$value_ref": {
+                "type": "string"
+              },
+              "epg_url_raw": {
+                "type": "string"
+              },
+              "group_raw": {
+                "type": "string"
+              },
+              "logo_url_raw": {
+                "type": "string"
+              },
+              "tvg_id_raw": {
+                "type": "string"
+              },
+              "tvg_name_raw": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "name_match_status": {
+            "enum": [
+              "matched",
+              "ambiguous",
+              "unknown"
+            ]
+          },
+          "name_normalized": {
+            "type": "string"
+          },
+          "name_raw": {
+            "type": "string"
+          },
+          "normalization_basis": {
+            "type": "object",
+            "properties": {
+              "$value_ref": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "normalization_null_reasons": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fields": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "reason": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "fields",
+                    "reason"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "origin_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Nonnegative count."
+          },
+          "origins": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "channel_key_hint": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "country_code": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "entry_id": {
+                  "type": "string"
+                },
+                "entry_locator": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string"
+                    },
+                    "name_line": {
+                      "type": "integer"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "role",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "epg_url_raw": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "group_raw": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "inherits_candidate_fields": {
+                  "type": "boolean"
+                },
+                "logo_url_raw": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "metadata_status": {
+                  "type": "object",
+                  "properties": {
+                    "$value_ref": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "$value_ref"
+                  ],
+                  "additionalProperties": false
+                },
+                "name_match_status": {
+                  "type": "string"
+                },
+                "name_normalized": {
+                  "type": "string"
+                },
+                "name_raw": {
+                  "type": "string"
+                },
+                "normalization_basis": {
+                  "type": "object",
+                  "properties": {
+                    "$value_ref": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false
+                },
+                "normalization_null_reasons": {
+                  "type": "object",
+                  "properties": {
+                    "$value_ref": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "$value_ref"
+                  ],
+                  "additionalProperties": false
+                },
+                "raw_metadata": {
+                  "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+                },
+                "raw_ref": {
+                  "type": "string"
+                },
+                "source_id": {
+                  "type": "string"
+                },
+                "source_snapshot_sha256": {
+                  "type": "string"
+                },
+                "tvg_id_raw": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "tvg_name_raw": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "entry_id",
+                "inherits_candidate_fields"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_metadata": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "raw_ref": {
+            "type": "string"
+          },
+          "region_code": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Z]{2}-[A-Z0-9]{1,3}$",
+                "description": "ISO 3166-2 subdivision."
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "request": {
+            "type": "object",
+            "required": [
+              "method",
+              "url",
+              "headers",
+              "options"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "method": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "minLength": 1
+              },
+              "headers": {
+                "type": "object",
+                "propertyNames": {
+                  "pattern": "^[!#$%&'*+.^_`|~0-9a-z-]+$"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "options": {
+                "type": "object",
+                "maxProperties": 0
+              }
+            }
+          },
+          "request_complete": {
+            "type": "boolean"
+          },
+          "request_incomplete_reasons": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "request_provenance": {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "attribute": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string"
+                    },
+                    "locator": {
+                      "type": "object",
+                      "properties": {
+                        "line": {
+                          "type": "integer"
+                        },
+                        "type": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "line",
+                        "type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "locator_ref": {
+                      "type": "string"
+                    },
+                    "path_ref": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "path_ref"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "request_revision": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^rr1:sha256:[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_snapshot_sha256": {
+            "type": "string"
+          },
+          "tvg_id_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "tvg_name_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "unparsed_dependencies": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          }
+        },
+        "required": [
+          "category",
+          "channel_key_hint",
+          "check_ids",
+          "check_status",
+          "content_identity_status",
+          "country_code",
+          "entry_id",
+          "entry_locator",
+          "epg_url_raw",
+          "group_raw",
+          "language_code",
+          "logo_url_raw",
+          "metadata_status",
+          "name_match_status",
+          "name_normalized",
+          "name_raw",
+          "normalization_basis",
+          "normalization_null_reasons",
+          "origin_count",
+          "origins",
+          "raw_metadata",
+          "raw_ref",
+          "region_code",
+          "request",
+          "request_complete",
+          "request_incomplete_reasons",
+          "request_provenance",
+          "request_revision",
+          "source_id",
+          "source_snapshot_sha256",
+          "tvg_id_raw",
+          "tvg_name_raw",
+          "unparsed_dependencies"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "original_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "original_id": {
+            "type": "string"
+          },
+          "original_row_metadata": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "original_url": {
+            "type": "string"
+          },
+          "provenance_url": {
+            "type": "string"
+          },
+          "row_1_based": {
+            "type": "integer"
+          },
+          "sheet": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "workbook": {
+            "type": "object",
+            "properties": {
+              "bytes": {
+                "type": "integer"
+              },
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "bytes",
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "category",
+          "name",
+          "original_id",
+          "original_row_metadata",
+          "original_url",
+          "provenance_url",
+          "row_1_based",
+          "sheet",
+          "source_id",
+          "workbook"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "schema_version": {
+      "const": "source-hub-feed.v1"
+    },
+    "shared_values": {
+      "type": "object",
+      "additionalProperties": {},
+      "description": "Same-document shared JSON values. Exact $value_ref markers are deterministically resolved; missing references and cycles are rejected by the business validator."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category_raw": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "fetch_status": {
+            "enum": [
+              "not_retained",
+              "retained",
+              "sensitive_quarantined"
+            ]
+          },
+          "fetch_time": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "incomplete_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "live_candidate_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Nonnegative count."
+          },
+          "name_raw": {
+            "type": "string"
+          },
+          "observed_fetch_metadata": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "original_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_url": {
+            "type": "string"
+          },
+          "parse_scope": {
+            "enum": [
+              "all_retained_snapshots",
+              "none"
+            ]
+          },
+          "parse_status": {
+            "enum": [
+              "complete",
+              "not_parsed",
+              "partial",
+              "unsupported"
+            ]
+          },
+          "parse_time": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "provenance_url": {
+            "type": "string"
+          },
+          "snapshots": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "byte_count": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Nonnegative count."
+                },
+                "capture_evidence": {
+                  "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+                },
+                "encoding": {
+                  "type": "string"
+                },
+                "fetch_time": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "format_hint": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string"
+                },
+                "original_response_bytes_available": {
+                  "type": "boolean"
+                },
+                "parse_result": {
+                  "type": "object",
+                  "properties": {
+                    "config_dependencies": {
+                      "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+                    },
+                    "error": {
+                      "type": "string"
+                    },
+                    "format": {
+                      "type": "string"
+                    },
+                    "keys_preserved_in_source": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "line_count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Nonnegative count."
+                    },
+                    "parsed_count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Nonnegative count."
+                    },
+                    "unparsed_items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "line": {
+                            "type": "integer"
+                          },
+                          "pointer": {
+                            "type": "string"
+                          },
+                          "reason": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "reason"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "vod_count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Nonnegative count."
+                    }
+                  },
+                  "required": [
+                    "parsed_count"
+                  ],
+                  "additionalProperties": false
+                },
+                "parse_status": {
+                  "type": "string"
+                },
+                "parse_time": {
+                  "type": "string"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "reported_sha256": {
+                  "anyOf": [
+                    {
+                      "type": "null"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "sha256": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "byte_count",
+                "capture_evidence",
+                "encoding",
+                "fetch_time",
+                "format_hint",
+                "kind",
+                "parse_result",
+                "parse_status",
+                "parse_time",
+                "path",
+                "reported_sha256",
+                "sha256"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "vod_site_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Nonnegative count."
+          }
+        },
+        "required": [
+          "category_raw",
+          "fetch_status",
+          "fetch_time",
+          "incomplete_reasons",
+          "live_candidate_count",
+          "name_raw",
+          "observed_fetch_metadata",
+          "original_ids",
+          "original_url",
+          "parse_scope",
+          "parse_status",
+          "parse_time",
+          "provenance_url",
+          "snapshots",
+          "source_id",
+          "vod_site_count"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "check_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "check_evidence_kind_counts": {
+          "type": "object",
+          "properties": {
+            "actual_measurement": {
+              "type": "integer"
+            },
+            "historical_summary": {
+              "type": "integer"
+            },
+            "not_run": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "actual_measurement",
+            "historical_summary",
+            "not_run"
+          ],
+          "additionalProperties": false
+        },
+        "check_status_counts": {
+          "type": "object",
+          "properties": {
+            "blocked": {
+              "type": "integer"
+            },
+            "cancelled": {
+              "type": "integer"
+            },
+            "fail": {
+              "type": "integer"
+            },
+            "incomplete": {
+              "type": "integer"
+            },
+            "not_tested": {
+              "type": "integer"
+            },
+            "pass": {
+              "type": "integer"
+            },
+            "pass_with_warnings": {
+              "type": "integer"
+            },
+            "unsupported": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "blocked",
+            "cancelled",
+            "fail",
+            "incomplete",
+            "not_tested",
+            "pass",
+            "pass_with_warnings",
+            "unsupported"
+          ],
+          "additionalProperties": false
+        },
+        "distinct_complete_request_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "fetch_status_counts": {
+          "type": "object",
+          "properties": {
+            "not_retained": {
+              "type": "integer"
+            },
+            "retained": {
+              "type": "integer"
+            },
+            "sensitive_quarantined": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "not_retained",
+            "retained",
+            "sensitive_quarantined"
+          ],
+          "additionalProperties": false
+        },
+        "incomplete_request_candidate_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "live_candidate_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "live_candidates_without_actual_media_request": {
+          "type": "integer"
+        },
+        "live_origin_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "name_match_counts": {
+          "type": "object",
+          "properties": {
+            "ambiguous": {
+              "type": "integer"
+            },
+            "matched": {
+              "type": "integer"
+            },
+            "unknown": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "ambiguous",
+            "matched",
+            "unknown"
+          ],
+          "additionalProperties": false
+        },
+        "original_inventory_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "parse_status_counts": {
+          "type": "object",
+          "properties": {
+            "complete": {
+              "type": "integer"
+            },
+            "not_parsed": {
+              "type": "integer"
+            },
+            "partial": {
+              "type": "integer"
+            },
+            "unsupported": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "complete",
+            "not_parsed",
+            "partial",
+            "unsupported"
+          ],
+          "additionalProperties": false
+        },
+        "scope": {
+          "type": "string"
+        },
+        "source_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "vod_origin_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        },
+        "vod_site_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nonnegative count."
+        }
+      },
+      "required": [
+        "check_count",
+        "check_evidence_kind_counts",
+        "check_status_counts",
+        "distinct_complete_request_count",
+        "fetch_status_counts",
+        "incomplete_request_candidate_count",
+        "live_candidate_count",
+        "live_candidates_without_actual_media_request",
+        "live_origin_count",
+        "name_match_counts",
+        "original_inventory_count",
+        "parse_status_counts",
+        "scope",
+        "source_count",
+        "vod_origin_count",
+        "vod_site_count"
+      ],
+      "additionalProperties": false
+    },
+    "vod_sites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "config_dependencies_ref": {
+            "type": "object",
+            "properties": {
+              "snapshot_sha256": {
+                "type": "string"
+              },
+              "source_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "snapshot_sha256",
+              "source_id"
+            ],
+            "additionalProperties": false
+          },
+          "entry_locator": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "execution_status": {
+            "type": "string"
+          },
+          "incomplete_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name_raw": {
+            "type": "string"
+          },
+          "origin_count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Nonnegative count."
+          },
+          "origins": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "config_dependencies_ref": {
+                  "type": "object",
+                  "properties": {
+                    "snapshot_sha256": {
+                      "type": "string"
+                    },
+                    "source_id": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "snapshot_sha256",
+                    "source_id"
+                  ],
+                  "additionalProperties": false
+                },
+                "entry_locator": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "inherits_site_fields": {
+                  "type": "boolean"
+                },
+                "raw_ref": {
+                  "type": "string"
+                },
+                "source_id": {
+                  "type": "string"
+                },
+                "source_snapshot_sha256": {
+                  "type": "string"
+                },
+                "vod_site_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "inherits_site_fields",
+                "vod_site_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "raw_ref": {
+            "type": "string"
+          },
+          "request_complete": {
+            "type": "boolean"
+          },
+          "site_raw": {
+            "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_snapshot_sha256": {
+            "type": "string"
+          },
+          "vod_site_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "config_dependencies_ref",
+          "entry_locator",
+          "execution_status",
+          "incomplete_reasons",
+          "name_raw",
+          "origin_count",
+          "origins",
+          "raw_ref",
+          "request_complete",
+          "site_raw",
+          "source_id",
+          "source_snapshot_sha256",
+          "vod_site_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "archive_files",
+    "batch_id",
+    "checks",
+    "deduplication",
+    "environments",
+    "generated_at",
+    "live_entries",
+    "original_inventory",
+    "schema_version",
+    "shared_values",
+    "sources",
+    "summary",
+    "vod_sites"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:source-hub-feed:v1",
+  "title": "source-hub-feed.v1 single-file offline interchange",
+  "description": "Distinct from draft.2 split-file schema. All main business collections are in feed.json."
+}

@@ -1,0 +1,744 @@
+{
+  "registry_version": "channel_alias_registry.v1",
+  "channels": {
+    "cn.cctv.1": {
+      "name": "CCTV-1",
+      "aliases": [
+        "CCTV1",
+        "CCTV-1",
+        "CCTV1综合",
+        "CCTV-1综合",
+        "央视1套"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.2": {
+      "name": "CCTV-2",
+      "aliases": [
+        "CCTV2",
+        "CCTV-2",
+        "CCTV2财经",
+        "CCTV-2财经",
+        "央视2套"
+      ],
+      "category": "business",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.3": {
+      "name": "CCTV-3",
+      "aliases": [
+        "CCTV3",
+        "CCTV-3",
+        "CCTV3综艺",
+        "CCTV-3综艺",
+        "央视3套"
+      ],
+      "category": "entertainment",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.4": {
+      "name": "CCTV-4",
+      "aliases": [
+        "CCTV4",
+        "CCTV-4",
+        "CCTV4中文国际",
+        "CCTV-4中文国际",
+        "央视4套"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.5": {
+      "name": "CCTV-5",
+      "aliases": [
+        "CCTV5",
+        "CCTV-5",
+        "CCTV5体育",
+        "CCTV-5体育",
+        "央视5套"
+      ],
+      "category": "sports",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.6": {
+      "name": "CCTV-6",
+      "aliases": [
+        "CCTV6",
+        "CCTV-6",
+        "CCTV6电影",
+        "CCTV-6电影",
+        "央视6套"
+      ],
+      "category": "movies",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.7": {
+      "name": "CCTV-7",
+      "aliases": [
+        "CCTV7",
+        "CCTV-7",
+        "CCTV7国防军事",
+        "CCTV-7国防军事",
+        "央视7套"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.8": {
+      "name": "CCTV-8",
+      "aliases": [
+        "CCTV8",
+        "CCTV-8",
+        "CCTV8电视剧",
+        "CCTV-8电视剧",
+        "央视8套"
+      ],
+      "category": "series",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.9": {
+      "name": "CCTV-9",
+      "aliases": [
+        "CCTV9",
+        "CCTV-9",
+        "CCTV9纪录",
+        "CCTV-9纪录",
+        "央视9套"
+      ],
+      "category": "documentary",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.10": {
+      "name": "CCTV-10",
+      "aliases": [
+        "CCTV10",
+        "CCTV-10",
+        "CCTV10科教",
+        "CCTV-10科教",
+        "央视10套"
+      ],
+      "category": "education",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.11": {
+      "name": "CCTV-11",
+      "aliases": [
+        "CCTV11",
+        "CCTV-11",
+        "CCTV11戏曲",
+        "CCTV-11戏曲",
+        "央视11套"
+      ],
+      "category": "culture",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.12": {
+      "name": "CCTV-12",
+      "aliases": [
+        "CCTV12",
+        "CCTV-12",
+        "CCTV12社会与法",
+        "CCTV-12社会与法",
+        "央视12套"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.13": {
+      "name": "CCTV-13",
+      "aliases": [
+        "CCTV13",
+        "CCTV-13",
+        "CCTV13新闻",
+        "CCTV-13新闻",
+        "央视13套"
+      ],
+      "category": "news",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.14": {
+      "name": "CCTV-14",
+      "aliases": [
+        "CCTV14",
+        "CCTV-14",
+        "CCTV14少儿",
+        "CCTV-14少儿",
+        "央视14套"
+      ],
+      "category": "kids",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.15": {
+      "name": "CCTV-15",
+      "aliases": [
+        "CCTV15",
+        "CCTV-15",
+        "CCTV15音乐",
+        "CCTV-15音乐",
+        "央视15套"
+      ],
+      "category": "music",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.16": {
+      "name": "CCTV-16",
+      "aliases": [
+        "CCTV16",
+        "CCTV-16",
+        "CCTV16奥林匹克",
+        "CCTV-16奥林匹克",
+        "央视16套"
+      ],
+      "category": "sports",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.17": {
+      "name": "CCTV-17",
+      "aliases": [
+        "CCTV17",
+        "CCTV-17",
+        "CCTV17农业农村",
+        "CCTV-17农业农村",
+        "央视17套"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cctv.5plus": {
+      "name": "CCTV-5+",
+      "aliases": [
+        "CCTV5+",
+        "CCTV-5+",
+        "CCTV5PLUS",
+        "CCTV5+体育赛事"
+      ],
+      "category": "sports",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.beijing.satellite": {
+      "name": "北京卫视",
+      "aliases": [
+        "北京卫视",
+        "Beijing Satellite TV",
+        "Beijing Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.shanghai.satellite": {
+      "name": "东方卫视",
+      "aliases": [
+        "东方卫视",
+        "Dragon Satellite TV",
+        "Dragon Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.anhui.satellite": {
+      "name": "安徽卫视",
+      "aliases": [
+        "安徽卫视",
+        "Anhui Satellite TV",
+        "Anhui Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.zhejiang.satellite": {
+      "name": "浙江卫视",
+      "aliases": [
+        "浙江卫视",
+        "Zhejiang Satellite TV",
+        "Zhejiang Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.jiangsu.satellite": {
+      "name": "江苏卫视",
+      "aliases": [
+        "江苏卫视",
+        "Jiangsu Satellite TV",
+        "Jiangsu Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.hunan.satellite": {
+      "name": "湖南卫视",
+      "aliases": [
+        "湖南卫视",
+        "Hunan Satellite TV",
+        "Hunan Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.hubei.satellite": {
+      "name": "湖北卫视",
+      "aliases": [
+        "湖北卫视",
+        "Hubei Satellite TV",
+        "Hubei Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.guangdong.satellite": {
+      "name": "广东卫视",
+      "aliases": [
+        "广东卫视",
+        "Guangdong Satellite TV",
+        "Guangdong Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.shandong.satellite": {
+      "name": "山东卫视",
+      "aliases": [
+        "山东卫视",
+        "Shandong Satellite TV",
+        "Shandong Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.henan.satellite": {
+      "name": "河南卫视",
+      "aliases": [
+        "河南卫视",
+        "Henan Satellite TV",
+        "Henan Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.hebei.satellite": {
+      "name": "河北卫视",
+      "aliases": [
+        "河北卫视",
+        "Hebei Satellite TV",
+        "Hebei Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.shanxi.satellite": {
+      "name": "山西卫视",
+      "aliases": [
+        "山西卫视",
+        "Shanxi Satellite TV",
+        "Shanxi Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.shaanxi.satellite": {
+      "name": "陕西卫视",
+      "aliases": [
+        "陕西卫视",
+        "Shaanxi Satellite TV",
+        "Shaanxi Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.sichuan.satellite": {
+      "name": "四川卫视",
+      "aliases": [
+        "四川卫视",
+        "Sichuan Satellite TV",
+        "Sichuan Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.chongqing.satellite": {
+      "name": "重庆卫视",
+      "aliases": [
+        "重庆卫视",
+        "Chongqing Satellite TV",
+        "Chongqing Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.tianjin.satellite": {
+      "name": "天津卫视",
+      "aliases": [
+        "天津卫视",
+        "Tianjin Satellite TV",
+        "Tianjin Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.liaoning.satellite": {
+      "name": "辽宁卫视",
+      "aliases": [
+        "辽宁卫视",
+        "Liaoning Satellite TV",
+        "Liaoning Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.jilin.satellite": {
+      "name": "吉林卫视",
+      "aliases": [
+        "吉林卫视",
+        "Jilin Satellite TV",
+        "Jilin Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.heilongjiang.satellite": {
+      "name": "黑龙江卫视",
+      "aliases": [
+        "黑龙江卫视",
+        "Heilongjiang Satellite TV",
+        "Heilongjiang Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.jiangxi.satellite": {
+      "name": "江西卫视",
+      "aliases": [
+        "江西卫视",
+        "Jiangxi Satellite TV",
+        "Jiangxi Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.guizhou.satellite": {
+      "name": "贵州卫视",
+      "aliases": [
+        "贵州卫视",
+        "Guizhou Satellite TV",
+        "Guizhou Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.yunnan.satellite": {
+      "name": "云南卫视",
+      "aliases": [
+        "云南卫视",
+        "Yunnan Satellite TV",
+        "Yunnan Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.guangxi.satellite": {
+      "name": "广西卫视",
+      "aliases": [
+        "广西卫视",
+        "Guangxi Satellite TV",
+        "Guangxi Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.hainan.satellite": {
+      "name": "海南卫视",
+      "aliases": [
+        "海南卫视",
+        "Hainan Satellite TV",
+        "Hainan Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.ningxia.satellite": {
+      "name": "宁夏卫视",
+      "aliases": [
+        "宁夏卫视",
+        "Ningxia Satellite TV",
+        "Ningxia Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.qinghai.satellite": {
+      "name": "青海卫视",
+      "aliases": [
+        "青海卫视",
+        "Qinghai Satellite TV",
+        "Qinghai Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.gansu.satellite": {
+      "name": "甘肃卫视",
+      "aliases": [
+        "甘肃卫视",
+        "Gansu Satellite TV",
+        "Gansu Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.xinjiang.satellite": {
+      "name": "新疆卫视",
+      "aliases": [
+        "新疆卫视",
+        "Xinjiang Satellite TV",
+        "Xinjiang Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.tibet.satellite": {
+      "name": "西藏卫视",
+      "aliases": [
+        "西藏卫视",
+        "Tibet Satellite TV",
+        "Tibet Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.inner-mongolia.satellite": {
+      "name": "内蒙古卫视",
+      "aliases": [
+        "内蒙古卫视",
+        "Inner Mongolia Satellite TV",
+        "Inner Mongolia Satellite Television"
+      ],
+      "category": "general",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "cn.cgtn": {
+      "name": "CGTN",
+      "aliases": [
+        "CGTN",
+        "CGTN English"
+      ],
+      "category": "news",
+      "country": "CN",
+      "region": null,
+      "language": null
+    },
+    "hk.phoenix-chinese": {
+      "name": "凤凰中文台",
+      "aliases": [
+        "凤凰中文",
+        "凤凰中文台",
+        "鳳凰中文台",
+        "Phoenix Chinese"
+      ],
+      "category": "general",
+      "country": "HK",
+      "region": null,
+      "language": null
+    },
+    "hk.phoenix-info": {
+      "name": "凤凰资讯台",
+      "aliases": [
+        "凤凰资讯",
+        "凤凰资讯台",
+        "鳳凰資訊台",
+        "Phoenix InfoNews"
+      ],
+      "category": "news",
+      "country": "HK",
+      "region": null,
+      "language": null
+    },
+    "hk.phoenix-hk": {
+      "name": "凤凰香港台",
+      "aliases": [
+        "凤凰香港",
+        "凤凰香港台",
+        "鳳凰香港台"
+      ],
+      "category": "general",
+      "country": "HK",
+      "region": null,
+      "language": null
+    },
+    "tw.beautiful-life": {
+      "name": "Beautiful Life TV",
+      "aliases": [
+        "Beautiful Life TV",
+        "人間衛視",
+        "人间卫视"
+      ],
+      "category": "culture",
+      "country": "TW",
+      "region": null,
+      "language": null
+    },
+    "gb.bbc-news": {
+      "name": "BBC News",
+      "aliases": [
+        "BBC News",
+        "BBC News HD"
+      ],
+      "category": "news",
+      "country": "GB",
+      "region": null,
+      "language": null
+    },
+    "us.cnn": {
+      "name": "CNN",
+      "aliases": [
+        "CNN",
+        "CNN International"
+      ],
+      "category": "news",
+      "country": "US",
+      "region": null,
+      "language": null
+    }
+  },
+  "group_category_dictionary": {
+    "新闻": "news",
+    "News": "news",
+    "体育": "sports",
+    "Sports": "sports",
+    "电影": "movies",
+    "Movies": "movies",
+    "纪录片": "documentary",
+    "Documentary": "documentary",
+    "少儿": "kids",
+    "Kids": "kids",
+    "音乐": "music",
+    "Music": "music",
+    "教育": "education",
+    "Education": "education",
+    "文化": "culture",
+    "财经": "business",
+    "娱乐": "entertainment",
+    "Entertainment": "entertainment",
+    "综合": "general",
+    "General": "general",
+    "宗教": "religion",
+    "Religious": "religion",
+    "影视": "movies",
+    "电视剧": "series"
+  },
+  "categories": [
+    "general",
+    "news",
+    "sports",
+    "movies",
+    "series",
+    "documentary",
+    "kids",
+    "music",
+    "education",
+    "culture",
+    "business",
+    "entertainment",
+    "religion",
+    "shopping",
+    "lifestyle",
+    "other"
+  ],
+  "note": "Name and geography hints only. No visual channel identity verification. Unknown names get no guessed channel key; language is not inferred from script."
+}

@@ -1,0 +1,219 @@
+{
+  "scope": "Offline retained-file hash matching; no network access",
+  "searched_roots": [
+    "/workspace/scratch/2746d7d1c495",
+    "/workspace/shared"
+  ],
+  "historical_fetch_records": 8,
+  "unique_historical_source_hashes": 7,
+  "fetch_records_with_matching_content": 5,
+  "unique_source_hashes_with_matching_content": 4,
+  "new_content_copies": 2,
+  "records": [
+    {
+      "round": "round1",
+      "source_key": "old039",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "039",
+      "historical_request_url": "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
+      "historical_request_utc": "2026-11-07T11:17:14.624563+00:00",
+      "historical_reported_sha256": "04e0d8e2a72e1e6990ccb4b4fe907be935e968748ec956c42cdf80b5e6287da6",
+      "historical_reported_bytes": 11947,
+      "local_matching_content_found": false,
+      "matching_paths": [],
+      "historical_request_response_custody_proven": false,
+      "content_reference": null,
+      "related_earlier_cache_records": [],
+      "interpretation": "限定本地搜索范围内未找到同SHA-256字节；不从其他版本或哈希重造。"
+    },
+    {
+      "round": "round1",
+      "source_key": "old090",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "historical_request_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "historical_request_utc": "2026-11-07T11:17:16.996624+00:00",
+      "historical_reported_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+      "historical_reported_bytes": 32047,
+      "local_matching_content_found": true,
+      "matching_paths": [
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_draft2/raw/http_002.bin",
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_protocol_draft2/raw/http_002.bin",
+        "/workspace/scratch/2746d7d1c495/independent_protocol_review/pilot_zip/tvbox_pilot_protocol_draft2/raw/http_002.bin"
+      ],
+      "historical_request_response_custody_proven": false,
+      "content_reference": {
+        "already_delivered_in": "tvbox_pilot_protocol_draft2.zip",
+        "archive_entry": "tvbox_pilot_protocol_draft2/raw/http_002.bin",
+        "sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745"
+      },
+      "related_earlier_cache_records": [],
+      "interpretation": "同SHA-256内容支持内容级核对，不证明这些字节由旧抽样的同一次HTTP响应保存；不补造那次响应原件。"
+    },
+    {
+      "round": "round1",
+      "source_key": "old059",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "059",
+      "historical_request_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+      "historical_request_utc": "2026-11-07T11:17:19.432414+00:00",
+      "historical_reported_sha256": "935849a6e2f083884a450510c6c000ee4535fc139f0fca168f51dcfcbfce44f8",
+      "historical_reported_bytes": 25215,
+      "local_matching_content_found": true,
+      "matching_paths": [
+        "/workspace/shared/tvbox_expand_live_cache/9bb1172ae37696952133da541daed8f0e834855b74994e28d2b256bb1a690947.txt",
+        "/workspace/shared/tvbox_expand_live_cache/050c1a1eb3d06bfba9673163241fa726a5c9f8efd9d22f3cd8fdad3ef4fd47f4.txt"
+      ],
+      "historical_request_response_custody_proven": false,
+      "content_reference": {
+        "supplement_path": "same_hash_source_content/935849a6e2f083884a450510c6c000ee4535fc139f0fca168f51dcfcbfce44f8.bin",
+        "copied_from": "/workspace/shared/tvbox_expand_live_cache/050c1a1eb3d06bfba9673163241fa726a5c9f8efd9d22f3cd8fdad3ef4fd47f4.txt",
+        "sha256": "935849a6e2f083884a450510c6c000ee4535fc139f0fca168f51dcfcbfce44f8"
+      },
+      "related_earlier_cache_records": [
+        {
+          "evidence_file": "/workspace/shared/tvbox_expand_live_evidence.json",
+          "evidence_file_sha256": "a9933693b98f80629623e8fa2dcb2d827486df7f6abf75d5bff147beec8e42e6",
+          "record_index": 6,
+          "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/IPTV-V6.m3u",
+          "checked_at_utc": "2026-11-07T10:40:09+00:00",
+          "byte_count": 25215,
+          "sha256": "935849a6e2f083884a450510c6c000ee4535fc139f0fca168f51dcfcbfce44f8"
+        },
+        {
+          "evidence_file": "/workspace/shared/tvbox_expand_live_evidence.json",
+          "evidence_file_sha256": "a9933693b98f80629623e8fa2dcb2d827486df7f6abf75d5bff147beec8e42e6",
+          "record_index": 57,
+          "url": "https://raw.githubusercontent.com/skddyj/iptv/main/IPTV.m3u",
+          "checked_at_utc": "2026-11-07T10:42:30+00:00",
+          "byte_count": 25215,
+          "sha256": "935849a6e2f083884a450510c6c000ee4535fc139f0fca168f51dcfcbfce44f8"
+        }
+      ],
+      "interpretation": "同SHA-256内容支持内容级核对，不证明这些字节由旧抽样的同一次HTTP响应保存；不补造那次响应原件。"
+    },
+    {
+      "round": "round1",
+      "source_key": "new051",
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-051",
+      "historical_request_url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV-IPV4.m3u",
+      "historical_request_utc": "2026-11-07T11:17:22.328299+00:00",
+      "historical_reported_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+      "historical_reported_bytes": 9874,
+      "local_matching_content_found": true,
+      "matching_paths": [
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_draft2/raw/http_003.bin",
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_protocol_draft2/raw/http_003.bin",
+        "/workspace/scratch/2746d7d1c495/independent_protocol_review/pilot_zip/tvbox_pilot_protocol_draft2/raw/http_003.bin",
+        "/workspace/shared/tvbox_expand_live_cache/94d5517938ce87a6d1865ed85717b223e7768ddfafd95f98cc3f2a19fbcbfe59.txt"
+      ],
+      "historical_request_response_custody_proven": false,
+      "content_reference": {
+        "already_delivered_in": "tvbox_pilot_protocol_draft2.zip",
+        "archive_entry": "tvbox_pilot_protocol_draft2/raw/http_003.bin",
+        "sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751"
+      },
+      "related_earlier_cache_records": [
+        {
+          "evidence_file": "/workspace/shared/tvbox_expand_live_evidence.json",
+          "evidence_file_sha256": "a9933693b98f80629623e8fa2dcb2d827486df7f6abf75d5bff147beec8e42e6",
+          "record_index": 48,
+          "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV-IPV4.m3u",
+          "checked_at_utc": "2026-11-07T10:41:57+00:00",
+          "byte_count": 9874,
+          "sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751"
+        }
+      ],
+      "interpretation": "同SHA-256内容支持内容级核对，不证明这些字节由旧抽样的同一次HTTP响应保存；不补造那次响应原件。"
+    },
+    {
+      "round": "round2",
+      "source_key": "old041",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "historical_request_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "historical_request_utc": "2026-11-07T12:04:23.806810+00:00",
+      "historical_reported_sha256": "4fee85f764e0586be1c259e0acc9ab8f4da45681663cfe10779bcacc4757ad07",
+      "historical_reported_bytes": 96672,
+      "local_matching_content_found": false,
+      "matching_paths": [],
+      "historical_request_response_custody_proven": false,
+      "content_reference": null,
+      "related_earlier_cache_records": [],
+      "interpretation": "限定本地搜索范围内未找到同SHA-256字节；不从其他版本或哈希重造。"
+    },
+    {
+      "round": "round2",
+      "source_key": "old078",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "historical_request_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "historical_request_utc": "2026-11-07T12:04:32.813970+00:00",
+      "historical_reported_sha256": "76cf22fd7d77bd23067d28f3713d4e8b4c044ae679877cdf73743f7934b281b4",
+      "historical_reported_bytes": 28517,
+      "local_matching_content_found": false,
+      "matching_paths": [],
+      "historical_request_response_custody_proven": false,
+      "content_reference": null,
+      "related_earlier_cache_records": [],
+      "interpretation": "限定本地搜索范围内未找到同SHA-256字节；不从其他版本或哈希重造。"
+    },
+    {
+      "round": "round2",
+      "source_key": "old090",
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "historical_request_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "historical_request_utc": "2026-11-07T12:04:35.661781+00:00",
+      "historical_reported_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+      "historical_reported_bytes": 32047,
+      "local_matching_content_found": true,
+      "matching_paths": [
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_draft2/raw/http_002.bin",
+        "/workspace/scratch/2746d7d1c495/tvbox_pilot_protocol_draft2/raw/http_002.bin",
+        "/workspace/scratch/2746d7d1c495/independent_protocol_review/pilot_zip/tvbox_pilot_protocol_draft2/raw/http_002.bin"
+      ],
+      "historical_request_response_custody_proven": false,
+      "content_reference": {
+        "already_delivered_in": "tvbox_pilot_protocol_draft2.zip",
+        "archive_entry": "tvbox_pilot_protocol_draft2/raw/http_002.bin",
+        "sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745"
+      },
+      "related_earlier_cache_records": [],
+      "interpretation": "同SHA-256内容支持内容级核对，不证明这些字节由旧抽样的同一次HTTP响应保存；不补造那次响应原件。"
+    },
+    {
+      "round": "round2",
+      "source_key": "new049",
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "historical_request_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "historical_request_utc": "2026-11-07T12:04:39.184829+00:00",
+      "historical_reported_sha256": "ecf3ffb2d09078820ab81e6457c6c21232c0ee24b85f0735dce1ec066863168e",
+      "historical_reported_bytes": 131955,
+      "local_matching_content_found": true,
+      "matching_paths": [
+        "/workspace/shared/tvbox_expand_live_cache/24e629194dc8782dcb9200fe63d7f3ebc06c14afef56f80036512aefd708783a.txt"
+      ],
+      "historical_request_response_custody_proven": false,
+      "content_reference": {
+        "supplement_path": "same_hash_source_content/ecf3ffb2d09078820ab81e6457c6c21232c0ee24b85f0735dce1ec066863168e.bin",
+        "copied_from": "/workspace/shared/tvbox_expand_live_cache/24e629194dc8782dcb9200fe63d7f3ebc06c14afef56f80036512aefd708783a.txt",
+        "sha256": "ecf3ffb2d09078820ab81e6457c6c21232c0ee24b85f0735dce1ec066863168e"
+      },
+      "related_earlier_cache_records": [
+        {
+          "evidence_file": "/workspace/shared/tvbox_expand_live_evidence.json",
+          "evidence_file_sha256": "a9933693b98f80629623e8fa2dcb2d827486df7f6abf75d5bff147beec8e42e6",
+          "record_index": 36,
+          "url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+          "checked_at_utc": "2026-11-07T10:40:19+00:00",
+          "byte_count": 131955,
+          "sha256": "ecf3ffb2d09078820ab81e6457c6c21232c0ee24b85f0735dce1ec066863168e"
+        }
+      ],
+      "interpretation": "同SHA-256内容支持内容级核对，不证明这些字节由旧抽样的同一次HTTP响应保存；不补造那次响应原件。"
+    }
+  ]
+}

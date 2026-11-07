@@ -1,0 +1,15 @@
+{
+  "evidence_kind": "historical_summary",
+  "upgraded_to_actual_measurement": false,
+  "missing": [
+    "original source bytes",
+    "complete untruncated stderr/progress",
+    "independent audio and video timing"
+  ],
+  "truncation": {
+    "ffprobe_stderr_chars": 3000,
+    "ffmpeg_stderr_chars": 4000,
+    "ffmpeg_progress_tail_chars": 2500
+  },
+  "warning": "JSON contains historical measurements, not a draft.2 complete measurement record. Original source bytes cannot be recreated from hashes."
+}

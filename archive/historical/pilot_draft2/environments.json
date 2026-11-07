@@ -1,0 +1,85 @@
+[
+  {
+    "record_kind": "environment",
+    "schema_version": "0.1.0-draft.2",
+    "record_scope": "production",
+    "null_reasons": {
+      "/os": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/country": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/region": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/asn": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/operator": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/ip_addresses": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/dns_servers": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/egress/basis": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/native_ipv4/available": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/native_ipv4/verified_at": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/native_ipv6/available": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/native_ipv6/verified_at": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/connect_timeout_ms": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/total_timeout_ms": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/max_redirects": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/max_response_bytes": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/batch_wall_clock_budget_ms": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/parameters/batch_byte_budget": "Not observed or not applicable; retained evidence is authoritative. No value inferred.",
+      "/implicit_request_conditions": "Not observed or not applicable; retained evidence is authoritative. No value inferred."
+    },
+    "time_provenance": {},
+    "env_id": "env:dot-pilot",
+    "environment_kind": "cloud",
+    "description": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "observed_at": "2026-11-07T14:22:14.835768+00:00",
+    "os": null,
+    "tools": [
+      {
+        "name": "ffprobe",
+        "version": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers",
+        "version_evidence_ref": "evidence/environment.json"
+      },
+      {
+        "name": "ffmpeg",
+        "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+        "version_evidence_ref": "evidence/environment.json"
+      }
+    ],
+    "proxy": {
+      "used": true,
+      "kind": "managed HTTP(S)",
+      "description": "Inherited managed proxy; final IP and geography unknown"
+    },
+    "egress": {
+      "country": null,
+      "region": null,
+      "asn": null,
+      "operator": null,
+      "ip_addresses": null,
+      "dns_servers": null,
+      "basis": null
+    },
+    "native_ipv4": {
+      "available": null,
+      "verified_at": null,
+      "evidence_refs": []
+    },
+    "native_ipv6": {
+      "available": null,
+      "verified_at": null,
+      "evidence_refs": []
+    },
+    "parameters": {
+      "concurrency": 1,
+      "connect_timeout_ms": null,
+      "total_timeout_ms": null,
+      "max_retries": 0,
+      "max_redirects": null,
+      "max_response_bytes": null,
+      "batch_wall_clock_budget_ms": null,
+      "batch_byte_budget": null
+    },
+    "implicit_request_conditions": null,
+    "network_limitations": [
+      "Not user or television network",
+      "No native IPv4/IPv6 capability inferred"
+    ]
+  }
+]

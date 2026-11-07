@@ -1,0 +1,20 @@
+{
+  "source_count": 3,
+  "candidate_count": 20,
+  "attempted_candidate_count": 2,
+  "independent_decode_process_count": 4,
+  "status_counts": {
+    "blocked": 3,
+    "incomplete": 2
+  },
+  "network_response_bytes": 3553489,
+  "synthetic_records": 0,
+  "schema_status": "Evidence staging package, not yet mapped to draft.2 protocol record schema",
+  "limitations": [
+    "Preloaded sample decoding does not establish continuous online playback, TVBox device playback, legal distribution rights, or future availability.",
+    "Actual IP and egress geography unknown under managed proxy.",
+    "Programme bytes omitted; input SHA/length and complete probe/decode logs retained."
+  ],
+  "selected_candidate_count": 5,
+  "blocked_before_media_request_count": 3
+}

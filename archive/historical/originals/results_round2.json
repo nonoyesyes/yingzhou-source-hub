@@ -1,0 +1,1530 @@
+{
+  "environment": "dot cloud computer, inherited HTTP(S) proxy; not user device/network",
+  "scope": "one-time sample; 10-second local decode target, at most 20 seconds of complete HLS media, serial requests; no account, no keys, no private targets",
+  "playlists": [
+    {
+      "key": "old041",
+      "workbook": "tvbox_100.xlsx",
+      "entry": "041",
+      "url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:04:23.806810+00:00",
+          "url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "declared_length": "96672",
+          "bytes": 96672,
+          "elapsed_seconds": 3.469
+        }
+      ],
+      "http": 200,
+      "format": "Extended M3U",
+      "entry_count": 433,
+      "sha256": "4fee85f764e0586be1c259e0acc9ab8f4da45681663cfe10779bcacc4757ad07"
+    },
+    {
+      "key": "old078",
+      "workbook": "tvbox_100.xlsx",
+      "entry": "078",
+      "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:04:32.813970+00:00",
+          "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "declared_length": "28517",
+          "bytes": 28517,
+          "elapsed_seconds": 2.846
+        }
+      ],
+      "http": 200,
+      "format": "Extended M3U",
+      "entry_count": 94,
+      "sha256": "76cf22fd7d77bd23067d28f3713d4e8b4c044ae679877cdf73743f7934b281b4"
+    },
+    {
+      "key": "old090",
+      "workbook": "tvbox_100.xlsx",
+      "entry": "090",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:04:35.661781+00:00",
+          "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "audio/x-mpegurl",
+          "declared_length": "32047",
+          "bytes": 32047,
+          "elapsed_seconds": 3.518
+        }
+      ],
+      "http": 200,
+      "format": "Extended M3U",
+      "entry_count": 151,
+      "sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745"
+    },
+    {
+      "key": "new049",
+      "workbook": "tvbox_expansion.xlsx",
+      "entry": "NEW-049",
+      "url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:04:39.184829+00:00",
+          "url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "declared_length": "131955",
+          "bytes": 131955,
+          "elapsed_seconds": 2.671
+        }
+      ],
+      "http": 200,
+      "format": "TVBox TXT",
+      "entry_count": 1217,
+      "sha256": "ecf3ffb2d09078820ab81e6457c6c21232c0ee24b85f0735dce1ec066863168e"
+    }
+  ],
+  "samples": [
+    {
+      "sample": 10,
+      "playlist_key": "old041",
+      "channel": "CCTV13",
+      "started_utc": "2026-11-07T12:06:30.266263+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:06:30.266469+00:00",
+          "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/x-mpegURL",
+          "declared_length": "299",
+          "bytes": 299,
+          "elapsed_seconds": 4.543
+        },
+        {
+          "utc": "2026-11-07T12:06:34.809815+00:00",
+          "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p/0/00008908460512a1_4ba5a70_22d930.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/MP2T",
+          "declared_length": "2283824",
+          "bytes": 2283824,
+          "elapsed_seconds": 5.885
+        },
+        {
+          "utc": "2026-11-07T12:06:40.695232+00:00",
+          "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p/0/00008908460512a1_4dd33a0_1f6b9c.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/MP2T",
+          "declared_length": "2059164",
+          "bytes": 2059164,
+          "elapsed_seconds": 4.368
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+      "media_manifest_url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 2,
+      "selected_duration_seconds": 16.0,
+      "media_bytes": 4342988,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1920,
+                  "height": 1080,
+                  "r_frame_rate": "25/1"
+                },
+                {
+                  "index": 1,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "44100",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "25/1"
+            },
+            {
+              "index": 1,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "44100",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "frame=232\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=9480000\nout_time_ms=9480000\nout_time=00:00:09.480000\ndup_frames=0\ndrop_frames=0\nspeed=  19x\nprogress=continue\nframe=245\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed=15.2x\nprogress=end\n",
+        "stderr": ""
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 245,
+      "status": "decoded_10s",
+      "ended_utc": "2026-11-07T12:06:45.972000+00:00",
+      "wall_seconds": 15.706,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 11,
+      "playlist_key": "old041",
+      "channel": "东方卫视",
+      "started_utc": "2026-11-07T12:06:45.972708+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:06:45.972897+00:00",
+          "url": "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/x-mpegurl",
+          "declared_length": "852",
+          "bytes": 852,
+          "elapsed_seconds": 3.3
+        },
+        {
+          "utc": "2026-11-07T12:06:49.273152+00:00",
+          "url": "http://bp-resource-dfl.bestv.cn/material/6b920aedc3acb159165b20284279005a/2026/0825/video/f91bcd13e9d34f68a50fd46a5da91478-00420.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1322956",
+          "bytes": 1322956,
+          "elapsed_seconds": 6.62
+        },
+        {
+          "utc": "2026-11-07T12:06:55.892906+00:00",
+          "url": "http://bp-resource-dfl.bestv.cn/material/6b920aedc3acb159165b20284279005a/2026/0825/video/f91bcd13e9d34f68a50fd46a5da91478-00421.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1654212",
+          "bytes": 1654212,
+          "elapsed_seconds": 4.561
+        },
+        {
+          "utc": "2026-11-07T12:07:00.454029+00:00",
+          "url": "http://bp-resource-dfl.bestv.cn/material/6b920aedc3acb159165b20284279005a/2026/0825/video/f91bcd13e9d34f68a50fd46a5da91478-00422.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1334988",
+          "bytes": 1334988,
+          "elapsed_seconds": 5.194
+        },
+        {
+          "utc": "2026-11-07T12:07:05.648057+00:00",
+          "url": "http://bp-resource-dfl.bestv.cn/material/6b920aedc3acb159165b20284279005a/2026/0825/video/f91bcd13e9d34f68a50fd46a5da91478-00423.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1275392",
+          "bytes": 1275392,
+          "elapsed_seconds": 8.977
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
+      "media_manifest_url": "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 4,
+      "selected_duration_seconds": 12.16,
+      "media_bytes": 5587548,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1920,
+                  "height": 1080,
+                  "r_frame_rate": "25/1"
+                },
+                {
+                  "index": 1,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "44100",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "25/1"
+            },
+            {
+              "index": 1,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "44100",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "frame=248\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed=22.4x\nprogress=end\n",
+        "stderr": ""
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 248,
+      "status": "decoded_10s",
+      "ended_utc": "2026-11-07T12:07:15.323959+00:00",
+      "wall_seconds": 29.351,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 12,
+      "playlist_key": "old041",
+      "channel": "东南卫视",
+      "started_utc": "2026-11-07T12:07:15.324648+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:07:15.324746+00:00",
+          "url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "510",
+          "bytes": 510,
+          "elapsed_seconds": 3.329
+        },
+        {
+          "utc": "2026-11-07T12:07:18.654358+00:00",
+          "url": "http://live.zohi.tv/video/s10001-fztv-3/20261107/ts/2007/1794053223330@[duration].ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "328436",
+          "bytes": 328436,
+          "elapsed_seconds": 3.646
+        },
+        {
+          "utc": "2026-11-07T12:07:22.300833+00:00",
+          "url": "http://live.zohi.tv/video/s10001-fztv-3/20261107/ts/2007/1794053229331@[duration].ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "328436",
+          "bytes": 328436,
+          "elapsed_seconds": 3.825
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+      "media_manifest_url": "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 2,
+      "selected_duration_seconds": 11.978,
+      "media_bytes": 656872,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "[h264 @ 0x55a56cd3e880] non-existing SPS 0 referenced in buffering period\n",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "48000",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                },
+                {
+                  "index": 1,
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1920,
+                  "height": 1080,
+                  "r_frame_rate": "25/1"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            },
+            {
+              "index": 1,
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1080,
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "frame=247\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed=49.8x\nprogress=end\n",
+        "stderr": "[h264 @ 0x564b5f129bc0] non-existing SPS 0 referenced in buffering period\n    Last message repeated 1 times\n"
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 247,
+      "status": "decoded_10s",
+      "ended_utc": "2026-11-07T12:07:26.575255+00:00",
+      "wall_seconds": 11.251,
+      "decoder_warnings": true,
+      "qualification": "10 seconds decoded with H.264 SPS warning; do not label as error-free"
+    },
+    {
+      "sample": 13,
+      "playlist_key": "old041",
+      "channel": "山西卫视",
+      "started_utc": "2026-11-07T12:07:26.576178+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:07:26.576279+00:00",
+          "url": "http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "error": "timed out",
+          "elapsed_seconds": 12.013
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "timed out",
+      "status": "network_or_transport_failure",
+      "ended_utc": "2026-11-07T12:07:38.589048+00:00",
+      "wall_seconds": 12.013,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 14,
+      "playlist_key": "old041",
+      "channel": "黑龙江卫视",
+      "started_utc": "2026-11-07T12:07:38.590191+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:07:38.590305+00:00",
+          "url": "https://idclive.hljtv.com:4430/live/hljws_own.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 503,
+          "elapsed_seconds": 7.538,
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "https://idclive.hljtv.com:4430/live/hljws_own.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 503: Service Unavailable",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:07:46.128065+00:00",
+      "wall_seconds": 7.538,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 15,
+      "playlist_key": "old041",
+      "channel": "内蒙古卫视",
+      "started_utc": "2026-11-07T12:07:46.129554+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:07:46.129657+00:00",
+          "url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "331",
+          "bytes": 331,
+          "elapsed_seconds": 3.359
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+      "media_manifest_url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 3,
+      "selected_duration_seconds": 14.4,
+      "failed_stage": "segment HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:07:49.489239+00:00",
+      "wall_seconds": 3.36,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 16,
+      "playlist_key": "old041",
+      "channel": "安多卫视",
+      "started_utc": "2026-11-07T12:07:49.490139+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:07:49.490231+00:00",
+          "url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "272",
+          "bytes": 272,
+          "elapsed_seconds": 3.922
+        },
+        {
+          "utc": "2026-11-07T12:07:53.412448+00:00",
+          "url": "https://liveout.xntv.tv/a65jur/96iln2-1794053261000.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "565316",
+          "bytes": 565316,
+          "elapsed_seconds": 4.395
+        },
+        {
+          "utc": "2026-11-07T12:07:57.808060+00:00",
+          "url": "https://liveout.xntv.tv/a65jur/96iln2-1794053263000.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "572460",
+          "bytes": 572460,
+          "elapsed_seconds": 4.212
+        },
+        {
+          "utc": "2026-11-07T12:08:02.020052+00:00",
+          "url": "https://liveout.xntv.tv/a65jur/96iln2-1794053265000.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "563436",
+          "bytes": 563436,
+          "elapsed_seconds": 8.28
+        },
+        {
+          "utc": "2026-11-07T12:08:10.300327+00:00",
+          "url": "https://liveout.xntv.tv/a65jur/96iln2-1794053267000.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 404,
+          "elapsed_seconds": 2.77,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
+      "media_manifest_url": "https://liveout.xntv.tv/a65jur/96iln2.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 5,
+      "selected_duration_seconds": 10.0,
+      "failed_stage": "segment HTTP",
+      "error": "HTTP Error 404: Not Found",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:13.070884+00:00",
+      "wall_seconds": 23.581,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 17,
+      "playlist_key": "old041",
+      "channel": "苏州4K",
+      "started_utc": "2026-11-07T12:08:13.072151+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:13.072249+00:00",
+          "url": "https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 503,
+          "elapsed_seconds": 3.713,
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 503: Service Unavailable",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:16.785954+00:00",
+      "wall_seconds": 3.714,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 18,
+      "playlist_key": "old041",
+      "channel": "山东教育",
+      "started_utc": "2026-11-07T12:08:16.787556+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:16.787685+00:00",
+          "url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "212",
+          "bytes": 212,
+          "elapsed_seconds": 4.865
+        },
+        {
+          "utc": "2026-11-07T12:08:21.652996+00:00",
+          "url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/dianshizhibo-1794053285319.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "420180",
+          "bytes": 420180,
+          "elapsed_seconds": 4.063
+        },
+        {
+          "utc": "2026-11-07T12:08:25.716210+00:00",
+          "url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/dianshizhibo-1794053291294.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "557984",
+          "bytes": 557984,
+          "elapsed_seconds": 3.236
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "041",
+      "playlist_url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+      "stream_url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8",
+      "media_manifest_url": "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 2,
+      "selected_duration_seconds": 11.96,
+      "media_bytes": 978164,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720,
+                  "r_frame_rate": "25/1"
+                },
+                {
+                  "index": 1,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "48000",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "r_frame_rate": "25/1"
+            },
+            {
+              "index": 1,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "frame=250\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed=62.9x\nprogress=end\n",
+        "stderr": ""
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 250,
+      "status": "decoded_10s",
+      "ended_utc": "2026-11-07T12:08:29.318118+00:00",
+      "wall_seconds": 12.531,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 19,
+      "playlist_key": "old078",
+      "channel": "CCTV-2 财经",
+      "started_utc": "2026-11-07T12:08:29.321116+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:29.321194+00:00",
+          "url": "http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "error": "timed out",
+          "elapsed_seconds": 12.013
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "playlist_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "stream_url": "http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "timed out",
+      "status": "network_or_transport_failure",
+      "ended_utc": "2026-11-07T12:08:41.334104+00:00",
+      "wall_seconds": 12.013,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 20,
+      "playlist_key": "old078",
+      "channel": "CCTV-6 电影",
+      "started_utc": "2026-11-07T12:08:41.335288+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:41.335380+00:00",
+          "url": "http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 403,
+          "elapsed_seconds": 4.647,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "playlist_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "stream_url": "http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:45.982235+00:00",
+      "wall_seconds": 4.647,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 21,
+      "playlist_key": "old078",
+      "channel": "宁夏卫视",
+      "started_utc": "2026-11-07T12:08:45.983705+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:45.983774+00:00",
+          "url": "https://hls.ningxiahuangheyun.com/live/nxws1M.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 403,
+          "elapsed_seconds": 5.168,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "playlist_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "stream_url": "https://hls.ningxiahuangheyun.com/live/nxws1M.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:51.152147+00:00",
+      "wall_seconds": 5.168,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 22,
+      "playlist_key": "old078",
+      "channel": "山东卫视",
+      "started_utc": "2026-11-07T12:08:51.153266+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:51.153329+00:00",
+          "url": "http://lives.jnnews.tv/video/s10001-SDTV/index.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 503,
+          "elapsed_seconds": 3.489,
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "playlist_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "stream_url": "http://lives.jnnews.tv/video/s10001-SDTV/index.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 503: Service Unavailable",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:54.642479+00:00",
+      "wall_seconds": 3.489,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 23,
+      "playlist_key": "old078",
+      "channel": "兵团卫视",
+      "started_utc": "2026-11-07T12:08:54.643832+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:54.644451+00:00",
+          "url": "https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 403,
+          "elapsed_seconds": 5.33,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "078",
+      "playlist_url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "stream_url": "https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:08:59.974804+00:00",
+      "wall_seconds": 5.331,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 24,
+      "playlist_key": "old090",
+      "channel": "Guangdong Satellite TV",
+      "started_utc": "2026-11-07T12:08:59.976532+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:08:59.976612+00:00",
+          "url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "839",
+          "bytes": 839,
+          "elapsed_seconds": 3.487
+        },
+        {
+          "utc": "2026-11-07T12:09:03.463806+00:00",
+          "url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite-2444882.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1362248",
+          "bytes": 1362248,
+          "elapsed_seconds": 3.016
+        },
+        {
+          "utc": "2026-11-07T12:09:06.480069+00:00",
+          "url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite-2444883.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1378040",
+          "bytes": 1378040,
+          "elapsed_seconds": 3.428
+        },
+        {
+          "utc": "2026-11-07T12:09:09.908318+00:00",
+          "url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite-2444884.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "1374280",
+          "bytes": 1374280,
+          "elapsed_seconds": 2.868
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8",
+      "media_manifest_url": "https://h5cul1yar48um3t.wcetv.com/hls/gdsatellite.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 3,
+      "selected_duration_seconds": 12.0,
+      "media_bytes": 4114568,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "[h264 @ 0x55828b716d80] non-existing SPS 0 referenced in buffering period\n",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "h264",
+                  "codec_type": "video",
+                  "width": 1280,
+                  "height": 720,
+                  "r_frame_rate": "30/1"
+                },
+                {
+                  "index": 1,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "48000",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "r_frame_rate": "30/1"
+            },
+            {
+              "index": 1,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "frame=298\nfps=0.00\nstream_0_0_q=-0.0\nbitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed=  37x\nprogress=end\n",
+        "stderr": "[h264 @ 0x56176bbd50c0] non-existing SPS 0 referenced in buffering period\n    Last message repeated 1 times\n"
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 298,
+      "status": "decoded_10s",
+      "ended_utc": "2026-11-07T12:09:13.277726+00:00",
+      "wall_seconds": 13.301,
+      "decoder_warnings": true,
+      "qualification": "10 seconds decoded with H.264 SPS warning; do not label as error-free"
+    },
+    {
+      "sample": 25,
+      "playlist_key": "old090",
+      "channel": "Hebei TV (2160p)",
+      "started_utc": "2026-11-07T12:09:13.279163+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:13.279244+00:00",
+          "url": "https://event.pull.hebtv.com/live/live101.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "348",
+          "bytes": 348,
+          "elapsed_seconds": 3.965
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "https://event.pull.hebtv.com/live/live101.m3u8",
+      "media_manifest_url": "https://event.pull.hebtv.com/live/live101.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 3,
+      "selected_duration_seconds": 11.36,
+      "failed_stage": "segment HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:09:17.243961+00:00",
+      "wall_seconds": 3.965,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 26,
+      "playlist_key": "old090",
+      "channel": "Shenzhen Satellite TV (2160p)",
+      "started_utc": "2026-11-07T12:09:17.246329+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:17.246456+00:00",
+          "url": "https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 403,
+          "elapsed_seconds": 4.321,
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "HTTP Error 403: Forbidden",
+      "status": "http_error",
+      "ended_utc": "2026-11-07T12:09:21.568173+00:00",
+      "wall_seconds": 4.322,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 27,
+      "playlist_key": "old090",
+      "channel": "Yunnan Satellite TV (1080p)",
+      "started_utc": "2026-11-07T12:09:21.569979+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:21.570073+00:00",
+          "url": "https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "error": "The read operation timed out",
+          "elapsed_seconds": 14.756
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "The read operation timed out",
+      "status": "network_or_transport_failure",
+      "ended_utc": "2026-11-07T12:09:36.326411+00:00",
+      "wall_seconds": 14.756,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 28,
+      "playlist_key": "old090",
+      "channel": "Jiangsu Satellite TV (1080p)",
+      "started_utc": "2026-11-07T12:09:36.329147+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:36.329257+00:00",
+          "url": "http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/index.m3u8",
+          "resolved_ips": [
+            "39.134.24.166"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "error": "timed out",
+          "elapsed_seconds": 12.002
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/index.m3u8",
+      "failed_stage": "stream HTTP",
+      "error": "timed out",
+      "status": "network_or_transport_failure",
+      "ended_utc": "2026-11-07T12:09:48.331081+00:00",
+      "wall_seconds": 12.002,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 29,
+      "playlist_key": "old090",
+      "channel": "Anhui TV",
+      "started_utc": "2026-11-07T12:09:48.332763+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:48.332862+00:00",
+          "url": "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "196",
+          "bytes": 196,
+          "elapsed_seconds": 3.854
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_100.xlsx",
+      "workbook_entry": "090",
+      "playlist_url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "stream_url": "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8",
+      "failed_stage": "variant HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:09:52.187484+00:00",
+      "wall_seconds": 3.855,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 30,
+      "playlist_key": "new049",
+      "channel": "CCTV3",
+      "started_utc": "2026-11-07T12:09:52.188885+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:09:52.190623+00:00",
+          "url": "https://piccpndali.v.myalicdn.com/audio/cctv3_2.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/x-mpegURL",
+          "declared_length": "285",
+          "bytes": 285,
+          "elapsed_seconds": 3.701
+        },
+        {
+          "utc": "2026-11-07T12:09:55.892228+00:00",
+          "url": "https://piccpndali.v.myalicdn.com/audio/cctv3_audio/1794053393_14843984.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/MP2T",
+          "declared_length": "199280",
+          "bytes": 199280,
+          "elapsed_seconds": 4.979
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "playlist_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "stream_url": "https://piccpndali.v.myalicdn.com/audio/cctv3_2.m3u8",
+      "media_manifest_url": "https://piccpndali.v.myalicdn.com/audio/cctv3_2.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 1,
+      "selected_duration_seconds": 10.006,
+      "media_bytes": 199280,
+      "ffprobe": {
+        "exit_code": 0,
+        "stderr": "",
+        "metadata": {
+          "programs": [
+            {
+              "streams": [
+                {
+                  "index": 0,
+                  "codec_name": "aac",
+                  "codec_type": "audio",
+                  "sample_rate": "48000",
+                  "channels": 2,
+                  "r_frame_rate": "0/0"
+                }
+              ]
+            }
+          ],
+          "stream_groups": [],
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "aac",
+              "codec_type": "audio",
+              "sample_rate": "48000",
+              "channels": 2,
+              "r_frame_rate": "0/0"
+            }
+          ],
+          "format": {
+            "format_name": "mpegts"
+          }
+        }
+      },
+      "ffmpeg": {
+        "exit_code": 0,
+        "progress": "bitrate=N/A\ntotal_size=N/A\nout_time_us=10000000\nout_time_ms=10000000\nout_time=00:00:10.000000\ndup_frames=0\ndrop_frames=0\nspeed= 593x\nprogress=end\n",
+        "stderr": ""
+      },
+      "decoded_seconds": 10.0,
+      "decoded_frames": 0,
+      "status": "decoded_audio_10s",
+      "ended_utc": "2026-11-07T12:10:01.057092+00:00",
+      "wall_seconds": 8.867,
+      "decoder_warnings": false,
+      "qualification": "AAC audio only; no video stream found, not a successful TV-video sample"
+    },
+    {
+      "sample": 31,
+      "playlist_key": "new049",
+      "channel": "CCTV4",
+      "started_utc": "2026-11-07T12:10:01.059079+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:10:01.059239+00:00",
+          "url": "https://play.kankanlive.com/live/1698234936258960.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": null,
+          "bytes": 256,
+          "elapsed_seconds": 6.025
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "playlist_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "stream_url": "https://play.kankanlive.com/live/1698234936258960.m3u8",
+      "failed_stage": "variant HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:10:07.084133+00:00",
+      "wall_seconds": 6.025,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 32,
+      "playlist_key": "new049",
+      "channel": "CCTV5",
+      "started_utc": "2026-11-07T12:10:07.085982+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:10:07.086143+00:00",
+          "url": "http://gmxw.7766.org:808/hls/93/index.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "250",
+          "bytes": 250,
+          "elapsed_seconds": 3.463
+        },
+        {
+          "utc": "2026-11-07T12:10:10.549784+00:00",
+          "url": "http://gmxw.7766.org:808/hls/93/17129135611440.ts",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "video/mp2t",
+          "declared_length": "5545060",
+          "error": "timed out",
+          "elapsed_seconds": 25.494
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "playlist_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "stream_url": "http://gmxw.7766.org:808/hls/93/index.m3u8",
+      "media_manifest_url": "http://gmxw.7766.org:808/hls/93/index.m3u8",
+      "hls_endlist_absent": true,
+      "selected_segment_count": 3,
+      "selected_duration_seconds": 12.600000000000001,
+      "failed_stage": "segment HTTP",
+      "error": "timed out",
+      "status": "network_or_transport_failure",
+      "ended_utc": "2026-11-07T12:10:36.043651+00:00",
+      "wall_seconds": 28.958,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 33,
+      "playlist_key": "new049",
+      "channel": "CCTV7",
+      "started_utc": "2026-11-07T12:10:36.045735+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:10:36.046071+00:00",
+          "url": "http://8.138.7.223/tv/cctv7.m3u8",
+          "resolved_ips": [
+            "8.138.7.223"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": "204",
+          "bytes": 204,
+          "elapsed_seconds": 4.112
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "playlist_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "stream_url": "http://8.138.7.223/tv/cctv7.m3u8",
+      "failed_stage": "variant HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:10:40.157746+00:00",
+      "wall_seconds": 4.112,
+      "decoder_warnings": false
+    },
+    {
+      "sample": 34,
+      "playlist_key": "new049",
+      "channel": "CCTV10",
+      "started_utc": "2026-11-07T12:10:40.159487+00:00",
+      "request_log": [
+        {
+          "utc": "2026-11-07T12:10:40.159723+00:00",
+          "url": "https://play.kankanlive.com/live/1698423445959919.m3u8",
+          "resolved_ips": [
+            "resolved upstream by managed proxy; IP not observable"
+          ],
+          "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+          "http": 200,
+          "content_type": "application/vnd.apple.mpegurl",
+          "declared_length": null,
+          "bytes": 256,
+          "elapsed_seconds": 4.11
+        }
+      ],
+      "decode_target_seconds": 10,
+      "concurrency": 1,
+      "workbook": "tvbox_expansion.xlsx",
+      "workbook_entry": "NEW-049",
+      "playlist_url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+      "stream_url": "https://play.kankanlive.com/live/1698423445959919.m3u8",
+      "failed_stage": "variant HTTP",
+      "error": "The next URL had a nonempty query or other screened credential-like property. Stopped before requesting it under the conservative credential screen; not a playback-failure conclusion.",
+      "status": "skipped",
+      "ended_utc": "2026-11-07T12:10:44.270025+00:00",
+      "wall_seconds": 4.111,
+      "decoder_warnings": false
+    }
+  ],
+  "tools": {
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "method_limitations": [
+    "The names are playlist labels; broadcast identity was not visually confirmed.",
+    "No TVBox import or player compatibility test was performed.",
+    "No endlist indicates an HLS playlist without a final marker; current live-edge progression was not tested.",
+    "The managed proxy resolves hostnames upstream. Resolved origin IP and outbound region are not observable. The IPv6 literal test is not proof of native IPv6 connectivity.",
+    "The redirect screen rejected any nonempty query. The IPv6 302 target was not followed, and no assertion about that target's validity or credentials is made.",
+    "Timeouts and the 404 describe this cloud request at this time only. No blanket conclusion about source failure or user-network playback.",
+    "Only unencrypted media was fetched; no credentials, DRM, keys, private-address URLs or remote plugins were used.",
+    "The successful 10-second media decodes used memory-only downloaded segment bytes through pipe, with ffmpeg network protocols disabled. No media recording retained.",
+    "All nonempty query parameters were conservatively rejected before the URL request. A skipped entry is not proof of invalid credentials, DRM, or playback failure."
+  ]
+}

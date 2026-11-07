@@ -1,0 +1,32 @@
+[
+  {
+    "supplement_path": "historical_selection/round2_candidates.json",
+    "original": {
+      "path": "/workspace/scratch/2746d7d1c495/live_sample_20261107/round2_candidates.json",
+      "bytes": 231089,
+      "sha256": "e9f06bac03ba6c59289fd2348cdf4c7286dc22a22727f1f2a08c2be93c62cd76"
+    },
+    "role": "round2_candidate_enumeration",
+    "is_additional_measurement": false
+  },
+  {
+    "supplement_path": "historical_selection/round2_selected.json",
+    "original": {
+      "path": "/workspace/scratch/2746d7d1c495/live_sample_20261107/round2_selected.json",
+      "bytes": 3274,
+      "sha256": "1f5bde5a076285ced706db66426f8d06508dd514b71b4645b95261910b4e2fcf"
+    },
+    "role": "round2_selected_25",
+    "is_additional_measurement": false
+  },
+  {
+    "supplement_path": "historical_selection/results_sample8.json",
+    "original": {
+      "path": "/workspace/scratch/2746d7d1c495/live_sample_20261107/results_sample8.json",
+      "bytes": 5294,
+      "sha256": "5067fd93ff32caedaac3ba73957211803fdb49fa8bf98cdfd5c19bfbb2bee327"
+    },
+    "role": "sample8_intermediate_record_already_represented_in_final_results",
+    "is_additional_measurement": false
+  }
+]

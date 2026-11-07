@@ -1,0 +1,361 @@
+{
+  "executed": 44,
+  "passed": 44,
+  "behavior_passed": 44,
+  "actual_network_tests": 0,
+  "fixtures": "synthetic, isolated temporary copies",
+  "results": [
+    {
+      "case": "unchanged_actual_request",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_user_agent_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_user_agent_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_referer_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_referer_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_header_removal_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_header_removal_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_url_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_url_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_method_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_method_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_variant_without_plan_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "actual_variant_without_plan_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "actual_variant_wrong_parent",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "wrong variant parent revision",
+      "actual_error": "wrong variant parent revision",
+      "passed": true
+    },
+    {
+      "case": "planned_variant_actual_original_unmarked",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked planned request variant",
+      "actual_error": "unmarked planned request variant",
+      "passed": true
+    },
+    {
+      "case": "planned_variant_actual_original_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "planned_and_actual_variant_marked",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "failed_actual_variant_still_requires_marker",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "historical_actual_variant_still_requires_marker",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "unmarked actual request variant",
+      "actual_error": "unmarked actual request variant",
+      "passed": true
+    },
+    {
+      "case": "integer_target_boundary",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "fractional_floor_independent",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "fractional_floor_combined",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "below_target_floor_is_incomplete",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "below_target_floor_cannot_pass",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "decode did not reach target; use incomplete",
+      "actual_error": "decode did not reach target; use incomplete",
+      "passed": true
+    },
+    {
+      "case": "fractional_lower_target_accepted",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "rounded_up_9999_41_rejected",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "old_epsilon_cannot_cross_target",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "decimal_precision_cannot_cross_target",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "disjoint_floor_after_sum",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "overlap_floor_after_union",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "decimal_sum_exact_integer",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "floor_duration_not_endpoints",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "negative_timeline_origin",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "distinct_video_audio_joint_floors",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "distinct_combined_floors",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "joint_epsilon_cannot_cross_target",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: covered_media_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: covered_media_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "joint_floor_lower_target_accepted",
+      "expected_valid": true,
+      "actual_valid": true,
+      "expected_error": null,
+      "actual_error": null,
+      "passed": true
+    },
+    {
+      "case": "video_metric_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "audio_metric_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_audio_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_audio_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "joint_metric_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: covered_media_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: covered_media_duration_ms",
+      "passed": true
+    },
+    {
+      "case": "run_video_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "run coverage differs from floored intervals",
+      "actual_error": "run coverage differs from floored intervals",
+      "passed": true
+    },
+    {
+      "case": "run_audio_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "run coverage differs from floored intervals",
+      "actual_error": "run coverage differs from floored intervals",
+      "passed": true
+    },
+    {
+      "case": "combined_joint_must_equal_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "combined process joint coverage differs from floored intervals",
+      "actual_error": "combined process joint coverage differs from floored intervals",
+      "passed": true
+    },
+    {
+      "case": "extra_underreporting_is_not_floor",
+      "expected_valid": false,
+      "actual_valid": false,
+      "expected_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "actual_error": "coverage differs from floored timestamp intervals: decoded_video_duration_ms",
+      "passed": true
+    }
+  ]
+}

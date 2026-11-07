@@ -1,0 +1,86 @@
+[
+  {
+    "name": "fraction",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": 1.2}}"
+  },
+  {
+    "name": "unsafe_positive",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": 9007199254740992}}"
+  },
+  {
+    "name": "unsafe_negative",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": -9007199254740992}}"
+  },
+  {
+    "name": "unicode_key",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"\\u4e2d\\u6587\": 1}}"
+  },
+  {
+    "name": "empty_key",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"\": 1}}"
+  },
+  {
+    "name": "control_key",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"a\\n\": 1}}"
+  },
+  {
+    "name": "lone_high_surrogate",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"text\": \"\\ud800\"}}"
+  },
+  {
+    "name": "lone_low_surrogate",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"text\": \"\\udfff\"}}"
+  },
+  {
+    "name": "uppercase_header",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"User-Agent\": \"x\"}, \"options\": {}}"
+  },
+  {
+    "name": "header_newline",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"x\": \"x\\ny\"}, \"options\": {}}"
+  },
+  {
+    "name": "empty_url",
+    "input_text": "{\"method\": \"GET\", \"url\": \"\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {}}"
+  },
+  {
+    "name": "invalid_method",
+    "input_text": "{\"method\": \"GET\\n\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {}}"
+  },
+  {
+    "name": "array_options",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": []}"
+  },
+  {
+    "name": "extra_field",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {}, \"extra\": 1}"
+  },
+  {
+    "name": "float_integer_syntax",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": 1.0}}"
+  },
+  {
+    "name": "exponent_integer_syntax",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": 1e0}}"
+  },
+  {
+    "name": "duplicate_top_level",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {},\"method\":\"POST\"}"
+  },
+  {
+    "name": "duplicate_nested_key",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"x\":1,\"x\":2}}"
+  },
+  {
+    "name": "nonfinite",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {\"n\": NaN}}"
+  },
+  {
+    "name": "invalid_json",
+    "input_text": "{"
+  },
+  {
+    "name": "trailing_json",
+    "input_text": "{\"method\": \"GET\", \"url\": \"https://example.invalid/live.m3u8?token=Ab%2FC&b=2&a=1\", \"headers\": {\"user-agent\": \"ExamplePlayer/1.0\"}, \"options\": {}} null"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "source_hashes_not_found": [
+    {
+      "round": "round1",
+      "source_key": "old039",
+      "sha256": "04e0d8e2a72e1e6990ccb4b4fe907be935e968748ec956c42cdf80b5e6287da6",
+      "url": "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8"
+    },
+    {
+      "round": "round2",
+      "source_key": "old041",
+      "sha256": "4fee85f764e0586be1c259e0acc9ab8f4da45681663cfe10779bcacc4757ad07",
+      "url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u"
+    },
+    {
+      "round": "round2",
+      "source_key": "old078",
+      "sha256": "76cf22fd7d77bd23067d28f3713d4e8b4c044ae679877cdf73743f7934b281b4",
+      "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u"
+    }
+  ],
+  "not_retained_or_not_proven": [
+    "旧抽样那次来源HTTP响应原件的独立保管链；匹配内容不能替代响应来源证明。",
+    "历史ffprobe原始stdout字节和独立stderr文件；现存metadata为已解析JSON。",
+    "历史ffmpeg独立原始stdout/stderr文件；现存文本来自限定长度字段。",
+    "历史独立音频/视频解码进程及逐帧或逐样本时间区间。",
+    "可证明音视频共同原始媒体时钟的记录。",
+    "旧节目媒体字节，不可离线重解码。"
+  ],
+  "do_not_reconstruct": true,
+  "original_caveat_is_not_edited": true,
+  "refinement_of_prior_caveat": "“original source bytes missing”应分开描述：3个唯一来源无匹配内容；4个有同哈希内容，但均不因此证明旧次响应保管链。文本未达到截取上限，不将“有截断机制”误写为“已发现实际截断”。"
+}

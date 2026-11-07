@@ -1,0 +1,110 @@
+[
+  {
+    "original_id": "039",
+    "url": "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
+    "requests": [
+      {
+        "utc": "2026-11-07T14:22:14.837976+00:00",
+        "url": "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "text/plain; charset=utf-8",
+        "declared_length": "10104",
+        "bytes": 10104,
+        "elapsed_seconds": 5.178,
+        "response_evidence": {
+          "path": "raw/http_001.bin",
+          "sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+          "bytes": 10104
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      }
+    ],
+    "started_at": "2026-11-07T14:22:14.837764+00:00",
+    "snapshot": {
+      "path": "raw/http_001.bin",
+      "sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+      "bytes": 10104
+    },
+    "parsed_candidates": 56,
+    "status": "pass",
+    "finished_at": "2026-11-07T14:22:20.016113+00:00"
+  },
+  {
+    "original_id": "090",
+    "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+    "requests": [
+      {
+        "utc": "2026-11-07T14:22:20.016219+00:00",
+        "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "audio/x-mpegurl",
+        "declared_length": "32047",
+        "bytes": 32047,
+        "elapsed_seconds": 5.832,
+        "response_evidence": {
+          "path": "raw/http_002.bin",
+          "sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+          "bytes": 32047
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      }
+    ],
+    "started_at": "2026-11-07T14:22:20.016143+00:00",
+    "snapshot": {
+      "path": "raw/http_002.bin",
+      "sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+      "bytes": 32047
+    },
+    "parsed_candidates": 151,
+    "status": "pass",
+    "finished_at": "2026-11-07T14:22:25.848631+00:00"
+  },
+  {
+    "original_id": "NEW-051",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV-IPV4.m3u",
+    "requests": [
+      {
+        "utc": "2026-11-07T14:22:25.848761+00:00",
+        "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV-IPV4.m3u",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "text/plain; charset=utf-8",
+        "declared_length": "9874",
+        "bytes": 9874,
+        "elapsed_seconds": 3.731,
+        "response_evidence": {
+          "path": "raw/http_003.bin",
+          "sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+          "bytes": 9874
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      }
+    ],
+    "started_at": "2026-11-07T14:22:25.848676+00:00",
+    "snapshot": {
+      "path": "raw/http_003.bin",
+      "sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+      "bytes": 9874
+    },
+    "parsed_candidates": 31,
+    "status": "pass",
+    "finished_at": "2026-11-07T14:22:29.580684+00:00"
+  }
+]

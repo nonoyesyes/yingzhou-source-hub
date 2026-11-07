@@ -1,0 +1,83 @@
+{
+  "spider": "./spider_shorts.jar;md5;12d22140c2058f5586dd8f8fd9b2a5a9",
+  "wallpaper": "https://picsum.photos/1920/1080",
+  "updateTime": "2026-08-28",
+  "warningText": "短剧专仓 · 独立于精选主仓，jar 走本地文件",
+  "sites": [
+    {
+      "key": "暴風短剧",
+      "name": "短剧大全(1.2万)⚡直连",
+      "type": 1,
+      "api": "https://bfzyapi.com/api.php/provide/vod/from/bfzym3u8",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "categories": ["短剧大全", "影视解说"]
+    },
+    {
+      "key": "B站短剧",
+      "name": "🅱️B站短剧/漫剧🔍搜",
+      "type": 3,
+      "api": "https://fastly.jsdelivr.net/gh/jifeng250/tvbox-sources@main/js/drpy2.min.js",
+      "ext": "https://fastly.jsdelivr.net/gh/jifeng250/tvbox-sources@main/js/bilibili_shorts.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "七猫短剧",
+      "name": "七猫 · 短剧",
+      "type": 3,
+      "api": "csp_ShortQimao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "河马短剧",
+      "name": "河马 · 短剧",
+      "type": 3,
+      "api": "csp_ShortHema",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "围观短剧",
+      "name": "围观 · 短剧",
+      "type": 3,
+      "api": "csp_ShortWeiguan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "好看短剧",
+      "name": "好看 · 短剧",
+      "type": 3,
+      "api": "csp_ShortHaokan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    },
+    {
+      "key": "星芽短剧",
+      "name": "星芽 · 短剧",
+      "type": 3,
+      "api": "csp_ShortXingya",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0
+    }
+  ],
+  "parses": [],
+  "lives": [],
+  "doh": [],
+  "rules": [],
+  "ads": [],
+  "flags": {
+    "searchable": 1,
+    "quickSearch": 1,
+    "filterable": 1
+  }
+}

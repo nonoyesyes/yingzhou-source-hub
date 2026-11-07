@@ -1,0 +1,565 @@
+[
+  {
+    "candidate_id": "pilot-01",
+    "name": "Beautiful Life TV",
+    "request_url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "started_at": "2026-11-07T14:22:29.581955+00:00",
+    "requests": [
+      {
+        "utc": "2026-11-07T14:22:29.582029+00:00",
+        "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "application/vnd.apple.mpegurl",
+        "declared_length": "138",
+        "bytes": 138,
+        "elapsed_seconds": 8.618,
+        "response_evidence": {
+          "path": "raw/http_004.bin",
+          "sha256": "42a3681969c8122d2d18fd11c2f7e8c21b7c07d4f1b4b3a5b3f3281431af0987",
+          "bytes": 138
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      },
+      {
+        "utc": "2026-11-07T14:22:38.200661+00:00",
+        "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w435404922.m3u8",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "application/vnd.apple.mpegurl",
+        "declared_length": "601",
+        "bytes": 601,
+        "elapsed_seconds": 3.331,
+        "response_evidence": {
+          "path": "raw/http_005.bin",
+          "sha256": "34bc4f895d84e3109482f6db2b58d9ca0a681bc1f254169662505698de3c9a98",
+          "bytes": 601
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      },
+      {
+        "utc": "2026-11-07T14:22:41.532228+00:00",
+        "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/media_w435404922_13943.ts",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "video/MP2T",
+        "declared_length": "1703092",
+        "bytes": 1703092,
+        "elapsed_seconds": 7.733,
+        "response_evidence": {
+          "sha256": "fb993869c060f9181519d12fb61d35a92f05ffd302346049826a7bd3917b0e6c",
+          "bytes": 1703092,
+          "path": null,
+          "retention": "media bytes discarded after local decoding"
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      },
+      {
+        "utc": "2026-11-07T14:22:49.266806+00:00",
+        "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/media_w435404922_13944.ts",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "video/MP2T",
+        "declared_length": "1157516",
+        "bytes": 1157516,
+        "elapsed_seconds": 6.317,
+        "response_evidence": {
+          "sha256": "e3aff92ef31527bda71ed9ea71437f3c2079f9dfa050b45d3b71de66baaa3dde",
+          "bytes": 1157516,
+          "path": null,
+          "retention": "media bytes discarded after local decoding"
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      }
+    ],
+    "decode_runs": [
+      {
+        "media_kind": "video",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "warning",
+          "-protocol_whitelist",
+          "pipe",
+          "-i",
+          "pipe:0",
+          "-t",
+          "10",
+          "-map",
+          "0:v:0",
+          "-f",
+          "framecrc",
+          "pipe:1"
+        ],
+        "exit_code": 0,
+        "started_at": "2026-11-07T14:22:55.674131+00:00",
+        "finished_at": "2026-11-07T14:22:55.984334+00:00",
+        "frame_count": 300,
+        "time_base": "#tb 0: 1001/30000",
+        "coverage_seconds": 10.01,
+        "coverage_intervals": [
+          [
+            0.0,
+            10.01
+          ]
+        ],
+        "duration_method": "union of actual output frame PTS plus frame duration; not frame count / nominal FPS",
+        "stdout": {
+          "path": "evidence/pilot-01_video.framecrc",
+          "sha256": "fafc99b2675bbf5812fde9166fd150d68ef55c8ee0e324bbc577f692ff1f37e3",
+          "bytes": 17521
+        },
+        "stderr": {
+          "path": "evidence/pilot-01_video.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      },
+      {
+        "media_kind": "audio",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "warning",
+          "-protocol_whitelist",
+          "pipe",
+          "-i",
+          "pipe:0",
+          "-t",
+          "10",
+          "-map",
+          "0:a:0",
+          "-f",
+          "framecrc",
+          "pipe:1"
+        ],
+        "exit_code": 0,
+        "started_at": "2026-11-07T14:22:55.984655+00:00",
+        "finished_at": "2026-11-07T14:22:56.089682+00:00",
+        "frame_count": 468,
+        "time_base": "#tb 0: 1/48000",
+        "coverage_seconds": 9.979666666666667,
+        "coverage_intervals": [
+          [
+            0.0,
+            2.688
+          ],
+          [
+            2.6923333333333335,
+            9.984
+          ]
+        ],
+        "duration_method": "union of actual output frame PTS plus frame duration; not frame count / nominal FPS",
+        "stdout": {
+          "path": "evidence/pilot-01_audio.framecrc",
+          "sha256": "e30d7fcf19d059134e0abba89f81d4b1cccc6d8113cc094450d94f49bf3f6e4f",
+          "bytes": 27280
+        },
+        "stderr": {
+          "path": "evidence/pilot-01_audio.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    ],
+    "target_seconds": 10,
+    "input_mode": "preloaded_complete_segments",
+    "status": "incomplete",
+    "input_bytes": 2860608,
+    "advertised_seconds": 10.01,
+    "ffprobe": {
+      "command": [
+        "ffprobe",
+        "-v",
+        "warning",
+        "-protocol_whitelist",
+        "pipe",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "-i",
+        "pipe:0"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/pilot-01_probe.json",
+        "sha256": "90da434ea076a39e2c52d5203558fb890d99e335b7a846cc48a172dfc069fdba",
+        "bytes": 4915
+      },
+      "stderr": {
+        "path": "evidence/pilot-01_probe.stderr",
+        "sha256": "e12d2964f64e8b3d504a9443f5d6a25ce6cf81cfac4a7d83964310e84df85a9b",
+        "bytes": 51
+      }
+    },
+    "joint_coverage_seconds": 9.979666666666667,
+    "finished_at": "2026-11-07T14:22:56.090433+00:00",
+    "wall_seconds": 26.508475898000142,
+    "reason": "Strict 10.000 second target not reached by both streams and joint coverage; no tolerance or duration rounding used.",
+    "media_request_attempted": true
+  },
+  {
+    "candidate_id": "pilot-02",
+    "name": "浙江卫视",
+    "request_url": "http://zwebl02.cztv.com/live/channel01720Pnew.m3u8?auth_key=1793823716-824f6eef3e876d8718c59bba59576d8d-0-e398235e86e1003617bb00be0b7f84b5",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "started_at": "2026-11-07T14:22:56.090923+00:00",
+    "requests": [],
+    "decode_runs": [],
+    "target_seconds": 10,
+    "input_mode": "preloaded_complete_segments",
+    "status": "blocked",
+    "stopped_at_stage": "entry_request",
+    "error": "SKIP: credential/signed or query URL",
+    "finished_at": "2026-11-07T14:22:56.090969+00:00",
+    "wall_seconds": 4.2813999698410043e-05,
+    "reason": "Conservative safety policy rejected query URL before any media request. Not evidence of stream failure.",
+    "media_request_attempted": false
+  },
+  {
+    "candidate_id": "pilot-08",
+    "name": "ABN China (720p)",
+    "request_url": "https://mediaserver.abnvideos.com/streams/abnchina.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "started_at": "2026-11-07T14:22:56.091277+00:00",
+    "requests": [
+      {
+        "utc": "2026-11-07T14:22:56.091328+00:00",
+        "url": "https://mediaserver.abnvideos.com/streams/abnchina.m3u8",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "application/vnd.apple.mpegurl",
+        "declared_length": "1293",
+        "bytes": 1293,
+        "elapsed_seconds": 3.469,
+        "response_evidence": {
+          "path": "raw/http_008.bin",
+          "sha256": "7949ccefd9e74e3f71efa07c7b43389536642a54f0382e5d63453b1d9f979db8",
+          "bytes": 1293
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      },
+      {
+        "utc": "2026-11-07T14:22:59.561280+00:00",
+        "url": "https://s3.us-east-005.backblazeb2.com/abnvideos/ecc422d3-9cdd-4adc-bd49-1d58baf394e2/segment_360p_0195.ts",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "video/mp2t",
+        "declared_length": "322796",
+        "bytes": 322796,
+        "elapsed_seconds": 3.685,
+        "response_evidence": {
+          "sha256": "70004466b62a4d47c5757e0f26620bf47fad15694a431ac71a539310bc0809af",
+          "bytes": 322796,
+          "path": null,
+          "retention": "media bytes discarded after local decoding"
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      },
+      {
+        "utc": "2026-11-07T14:23:03.246434+00:00",
+        "url": "https://s3.us-east-005.backblazeb2.com/abnvideos/ecc422d3-9cdd-4adc-bd49-1d58baf394e2/segment_360p_0196.ts",
+        "resolved_ips": [
+          "resolved upstream by managed proxy; IP not observable"
+        ],
+        "network": "dot cloud, inherited HTTP(S) proxy; not user network",
+        "http": 200,
+        "content_type": "video/mp2t",
+        "declared_length": "316028",
+        "bytes": 316028,
+        "elapsed_seconds": 3.885,
+        "response_evidence": {
+          "sha256": "6b0f871355d7f56ecff9e72197980a97db96b9409eb65b8b3201878de90c8044",
+          "bytes": 316028,
+          "path": null,
+          "retention": "media bytes discarded after local decoding"
+        },
+        "request_headers": {
+          "User-Agent": "Mozilla/5.0 (compatible; stream validation)"
+        }
+      }
+    ],
+    "decode_runs": [
+      {
+        "media_kind": "video",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "warning",
+          "-protocol_whitelist",
+          "pipe",
+          "-i",
+          "pipe:0",
+          "-t",
+          "10",
+          "-map",
+          "0:v:0",
+          "-f",
+          "framecrc",
+          "pipe:1"
+        ],
+        "exit_code": 0,
+        "started_at": "2026-11-07T14:23:07.205860+00:00",
+        "finished_at": "2026-11-07T14:23:07.348272+00:00",
+        "frame_count": 240,
+        "time_base": "#tb 0: 1/24",
+        "coverage_seconds": 10.0,
+        "coverage_intervals": [
+          [
+            0.0,
+            10.0
+          ]
+        ],
+        "duration_method": "union of actual output frame PTS plus frame duration; not frame count / nominal FPS",
+        "stdout": {
+          "path": "evidence/pilot-08_video.framecrc",
+          "sha256": "66eb1d322c515f90bc4a2c96f1b96350b275e7f2a8a7a045ac9a9a0a49180281",
+          "bytes": 14034
+        },
+        "stderr": {
+          "path": "evidence/pilot-08_video.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      },
+      {
+        "media_kind": "audio",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "warning",
+          "-protocol_whitelist",
+          "pipe",
+          "-i",
+          "pipe:0",
+          "-t",
+          "10",
+          "-map",
+          "0:a:0",
+          "-f",
+          "framecrc",
+          "pipe:1"
+        ],
+        "exit_code": 0,
+        "started_at": "2026-11-07T14:23:07.348815+00:00",
+        "finished_at": "2026-11-07T14:23:07.443961+00:00",
+        "frame_count": 431,
+        "time_base": "#tb 0: 1/44100",
+        "coverage_seconds": 9.999410430839003,
+        "coverage_intervals": [
+          [
+            0.0,
+            0.3481859410430839
+          ],
+          [
+            0.34829931972789113,
+            1.3699773242630386
+          ],
+          [
+            1.37,
+            1.486077097505669
+          ],
+          [
+            1.4860997732426304,
+            1.6021768707482993
+          ],
+          [
+            1.6021995464852608,
+            2.391655328798186
+          ],
+          [
+            2.3916780045351476,
+            2.507755102040816
+          ],
+          [
+            2.5077777777777777,
+            2.6238548752834467
+          ],
+          [
+            2.623877551020408,
+            3.436553287981859
+          ],
+          [
+            3.4365759637188207,
+            3.5294331065759637
+          ],
+          [
+            3.529455782312925,
+            3.645532879818594
+          ],
+          [
+            3.6455555555555557,
+            4.783310657596372
+          ],
+          [
+            4.783333333333333,
+            4.899410430839002
+          ],
+          [
+            4.899433106575963,
+            5.015510204081632
+          ],
+          [
+            5.015532879818594,
+            5.131609977324263
+          ],
+          [
+            5.131632653061224,
+            5.2477097505668935
+          ],
+          [
+            5.2477324263038545,
+            5.363809523809524
+          ],
+          [
+            5.3638321995464855,
+            8.080544217687075
+          ],
+          [
+            8.080566893424036,
+            8.196643990929704
+          ],
+          [
+            8.196666666666667,
+            8.312743764172335
+          ],
+          [
+            8.312766439909296,
+            8.428843537414966
+          ],
+          [
+            8.428866213151927,
+            8.544943310657596
+          ],
+          [
+            8.544965986394558,
+            8.661043083900227
+          ],
+          [
+            8.661065759637188,
+            10.0
+          ]
+        ],
+        "duration_method": "union of actual output frame PTS plus frame duration; not frame count / nominal FPS",
+        "stdout": {
+          "path": "evidence/pilot-08_audio.framecrc",
+          "sha256": "2b1d05486763f5a8d95dd8b283b50876d69309bb0e850b97fbee50c2868e63fa",
+          "bytes": 25134
+        },
+        "stderr": {
+          "path": "evidence/pilot-08_audio.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    ],
+    "target_seconds": 10,
+    "input_mode": "preloaded_complete_segments",
+    "status": "incomplete",
+    "input_bytes": 638824,
+    "advertised_seconds": 12.0,
+    "ffprobe": {
+      "command": [
+        "ffprobe",
+        "-v",
+        "warning",
+        "-protocol_whitelist",
+        "pipe",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "-i",
+        "pipe:0"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/pilot-08_probe.json",
+        "sha256": "3ea47c61cf21bca710a01cf298b2bc93b39aef313eda6692a6b32356b1794227",
+        "bytes": 3706
+      },
+      "stderr": {
+        "path": "evidence/pilot-08_probe.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    "joint_coverage_seconds": 9.999410430839003,
+    "finished_at": "2026-11-07T14:23:07.444708+00:00",
+    "wall_seconds": 11.35343309000018,
+    "reason": "Strict 10.000 second target not reached by both streams and joint coverage; no tolerance or duration rounding used.",
+    "media_request_attempted": true
+  },
+  {
+    "candidate_id": "pilot-15",
+    "name": "东方卫视",
+    "request_url": "http://58.248.112.205:8006/GD_CUCC/G_DONGFANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHfFI8ayEeoekFD8P08%2F7EXF4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "started_at": "2026-11-07T14:23:07.445418+00:00",
+    "requests": [],
+    "decode_runs": [],
+    "target_seconds": 10,
+    "input_mode": "preloaded_complete_segments",
+    "status": "blocked",
+    "stopped_at_stage": "entry_request",
+    "error": "SKIP: credential/signed or query URL",
+    "finished_at": "2026-11-07T14:23:07.445466+00:00",
+    "wall_seconds": 4.450699998415075e-05,
+    "reason": "Conservative safety policy rejected query URL before any media request. Not evidence of stream failure.",
+    "media_request_attempted": false
+  },
+  {
+    "candidate_id": "pilot-16",
+    "name": "浙江卫视",
+    "request_url": "http://58.248.112.205:8006/GD_CUCC/G_ZHEJIANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHdr3tmmw%2BL49D6e6Yw0TfYx4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "started_at": "2026-11-07T14:23:07.446270+00:00",
+    "requests": [],
+    "decode_runs": [],
+    "target_seconds": 10,
+    "input_mode": "preloaded_complete_segments",
+    "status": "blocked",
+    "stopped_at_stage": "entry_request",
+    "error": "SKIP: credential/signed or query URL",
+    "finished_at": "2026-11-07T14:23:07.446302+00:00",
+    "wall_seconds": 2.714099991862895e-05,
+    "reason": "Conservative safety policy rejected query URL before any media request. Not evidence of stream failure.",
+    "media_request_attempted": false
+  }
+]

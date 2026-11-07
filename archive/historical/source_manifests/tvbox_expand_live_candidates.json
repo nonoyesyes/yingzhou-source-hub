@@ -1,0 +1,490 @@
+[
+  {
+    "name": "cs3306/IPTV-Sources · data/output/iptv_collection.m3u",
+    "url": "https://raw.githubusercontent.com/cs3306/IPTV-Sources/main/data/output/iptv_collection.m3u",
+    "source_project": "cs3306/IPTV-Sources",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/data/output/iptv_collection.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "跨项目汇总；不同项目间频道仍可能重合"
+  },
+  {
+    "name": "peterHchina/iptv · CCTV-V4.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/CCTV-V4.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/CCTV-V4.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · CCTV-V6.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/CCTV-V6.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/CCTV-V6.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · CNTV-V4.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/CNTV-V4.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/CNTV-V4.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · CNTV-V6.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/CNTV-V6.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/CNTV-V6.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · IPTV-V4.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/IPTV-V4.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/IPTV-V4.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · IPTV-V6.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/IPTV-V6.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/IPTV-V6.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · Live.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/Live.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/Live.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · bililive.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/bililive.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/bililive.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · douyuyqk.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/douyuyqk.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/douyuyqk.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · huyayqk.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/huyayqk.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/huyayqk.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "peterHchina/iptv · yylunbo.m3u",
+    "url": "https://raw.githubusercontent.com/peterHchina/iptv/main/yylunbo.m3u",
+    "source_project": "peterHchina/iptv",
+    "source_url": "https://github.com/peterHchina/iptv/blob/main/yylunbo.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同一项目按内容/网络分组，非独立信源；README要求V4另有网络访问条件；部分网络直播提示自定义User-Agent；未改变网络或使用代理"
+  },
+  {
+    "name": "vbskycn/iptv · tv/iptv6.m3u",
+    "url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.m3u",
+    "source_project": "vbskycn/iptv",
+    "source_url": "https://github.com/vbskycn/iptv/blob/master/tv/iptv6.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目的IPv6列表，与旧表IPv4频道可能重合"
+  },
+  {
+    "name": "Guovin/iptv-api · output/ipv4/result.m3u",
+    "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
+    "source_project": "Guovin/iptv-api",
+    "source_url": "https://github.com/Guovin/iptv-api/blob/gd/output/ipv4/result.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "旧表总表的IPv4分组，非独立项目"
+  },
+  {
+    "name": "Guovin/iptv-api · output/ipv6/result.m3u",
+    "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
+    "source_project": "Guovin/iptv-api",
+    "source_url": "https://github.com/Guovin/iptv-api/blob/gd/output/ipv6/result.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "旧表总表的IPv6分组，非独立项目"
+  },
+  {
+    "name": "joevess/IPTV · home.m3u8",
+    "url": "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
+    "source_project": "joevess/IPTV",
+    "source_url": "https://github.com/joevess/IPTV/blob/main/home.m3u8",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目不同范围；可能停更，仅保留本次非空列表"
+  },
+  {
+    "name": "joevess/IPTV · iptv.m3u8",
+    "url": "https://raw.githubusercontent.com/joevess/IPTV/main/iptv.m3u8",
+    "source_project": "joevess/IPTV",
+    "source_url": "https://github.com/joevess/IPTV/blob/main/iptv.m3u8",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目不同范围；可能停更，仅保留本次非空列表"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/IPTV.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/IPTV.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · aishang.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/aishang.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/aishang.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · bestv.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/bestv.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/bestv.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · cqyx.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/cqyx.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/cqyx.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · douyuyqk.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/douyuyqk.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/douyuyqk.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · ghyx.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/ghyx.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/ghyx.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · gudou.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/gudou.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/gudou.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · hbgd.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/hbgd.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/hbgd.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · huyayqk.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/huyayqk.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/huyayqk.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · itouch.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/itouch.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/itouch.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · msp.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/msp.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/msp.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · newbestv.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/newbestv.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/newbestv.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · sxg.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/sxg.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/sxg.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · yqgd.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/yqgd.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/yqgd.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "BigBigGrandG/IPTV-URL · yylunbo.m3u",
+    "url": "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/main/yylunbo.m3u",
+    "source_project": "BigBigGrandG/IPTV-URL",
+    "source_url": "https://github.com/BigBigGrandG/IPTV-URL/blob/main/yylunbo.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "README含Ftindy及其他项目转载；可能为旧版/镜像，授权及维护状况未知"
+  },
+  {
+    "name": "Rivens7/Livelist · CCTV.m3u",
+    "url": "https://raw.githubusercontent.com/Rivens7/Livelist/main/CCTV.m3u",
+    "source_project": "Rivens7/Livelist",
+    "source_url": "https://github.com/Rivens7/Livelist/blob/main/CCTV.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目不同分组；README称基于Moexin/IPTV且国内同步fanmingming/live，可能与旧表重合"
+  },
+  {
+    "name": "Rivens7/Livelist · CNTV.m3u",
+    "url": "https://raw.githubusercontent.com/Rivens7/Livelist/main/CNTV.m3u",
+    "source_project": "Rivens7/Livelist",
+    "source_url": "https://github.com/Rivens7/Livelist/blob/main/CNTV.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目不同分组；README称基于Moexin/IPTV且国内同步fanmingming/live，可能与旧表重合"
+  },
+  {
+    "name": "Rivens7/Livelist · IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/Rivens7/Livelist/main/IPTV.m3u",
+    "source_project": "Rivens7/Livelist",
+    "source_url": "https://github.com/Rivens7/Livelist/blob/main/IPTV.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目不同分组；README称基于Moexin/IPTV且国内同步fanmingming/live，可能与旧表重合"
+  },
+  {
+    "name": "zhanghongguang/zhanghongguang.github.io · index.m3u",
+    "url": "https://raw.githubusercontent.com/zhanghongguang/zhanghongguang.github.io/main/index.m3u",
+    "source_project": "zhanghongguang/zhanghongguang.github.io",
+    "source_url": "https://github.com/zhanghongguang/zhanghongguang.github.io/blob/main/index.m3u",
+    "grouping": "独立项目/综合列表",
+    "notes": "互联网转载汇总，项目未保证合法性/准确性"
+  },
+  {
+    "name": "xisohi/CHINA-IPTV · TV/live.txt",
+    "url": "https://raw.githubusercontent.com/xisohi/CHINA-IPTV/main/TV/live.txt",
+    "source_project": "xisohi/CHINA-IPTV",
+    "source_url": "https://github.com/xisohi/CHINA-IPTV/blob/main/TV/live.txt",
+    "grouping": "独立项目/综合列表",
+    "notes": "同项目汇总文件；运营商及地区限制可能存在"
+  },
+  {
+    "name": "alienlu/iptv · iptv.m3u",
+    "url": "https://raw.githubusercontent.com/alienlu/iptv/master/iptv.m3u",
+    "source_project": "alienlu/iptv",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "MercuryZz/IPTVN · heads/Files/IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/IPTV.m3u",
+    "source_project": "MercuryZz/IPTVN",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "mlzlzj/hnyuan · heads/main/iptv_list.txt",
+    "url": "https://raw.githubusercontent.com/mlzlzj/hnyuan/refs/heads/main/iptv_list.txt",
+    "source_project": "mlzlzj/hnyuan",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "fenxp/iptv · heads/main/live/tvlive.txt",
+    "url": "https://raw.githubusercontent.com/fenxp/iptv/refs/heads/main/live/tvlive.txt",
+    "source_project": "fenxp/iptv",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "qwerttvv/Beijing-IPTV · IPTV-Unicom.m3u",
+    "url": "https://raw.githubusercontent.com/qwerttvv/Beijing-IPTV/master/IPTV-Unicom.m3u",
+    "source_project": "qwerttvv/Beijing-IPTV",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "drangjchen/IPTV · heads/main/M3U/Global.m3u",
+    "url": "https://raw.githubusercontent.com/drangjchen/IPTV/refs/heads/main/M3U/Global.m3u",
+    "source_project": "drangjchen/IPTV",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "iceyheart/IPTV · iptv.m3u",
+    "url": "https://raw.githubusercontent.com/iceyheart/IPTV/main/iptv.m3u",
+    "source_project": "iceyheart/IPTV",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "cairong/iptv-yuan · jsyd.m3u",
+    "url": "https://raw.githubusercontent.com/cairong/iptv-yuan/main/jsyd.m3u",
+    "source_project": "cairong/iptv-yuan",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "jisoypub/iptv · cn_all.m3u",
+    "url": "https://raw.githubusercontent.com/jisoypub/iptv/master/cn_all.m3u",
+    "source_project": "jisoypub/iptv",
+    "source_url": "https://github.com/cs3306/IPTV-Sources/blob/main/config.json",
+    "grouping": "其他公开项目",
+    "notes": "从cs3306项目订阅配置发现；跨项目频道可能重合；原始项目维护和授权另需核实"
+  },
+  {
+    "name": "svefnz/IPTVN · CCTV-IPV4.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CCTV-IPV4.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/CCTV-IPV4.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · CCTV.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CCTV.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/CCTV.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · CNTV-IPV4.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV-IPV4.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/CNTV-IPV4.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · CNTV.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/CNTV.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/CNTV.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · GAT.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/GAT.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/GAT.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/IPTV.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/IPTV.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · IPV4.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/IPV4.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/IPV4.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "svefnz/IPTVN · phoenix.m3u",
+    "url": "https://raw.githubusercontent.com/svefnz/IPTVN/Files/phoenix.m3u",
+    "source_project": "svefnz/IPTVN",
+    "source_url": "https://github.com/svefnz/IPTVN/blob/Files/phoenix.m3u",
+    "grouping": "同项目内容/网络分组",
+    "notes": "同项目的不同内容或IPv4/IPv6分组；并非独立项目"
+  },
+  {
+    "name": "kakaxi-1/IPTV · ipv6.m3u",
+    "url": "https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv6.m3u",
+    "source_project": "kakaxi-1/IPTV",
+    "source_url": "https://github.com/kakaxi-1/IPTV/blob/main/ipv6.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "kakaxi-1/IPTV · 湖北移动http.m3u",
+    "url": "https://raw.githubusercontent.com/kakaxi-1/IPTV/main/%E6%B9%96%E5%8C%97%E7%A7%BB%E5%8A%A8http.m3u",
+    "source_project": "kakaxi-1/IPTV",
+    "source_url": "https://github.com/kakaxi-1/IPTV/blob/main/%E6%B9%96%E5%8C%97%E7%A7%BB%E5%8A%A8http.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "kakaxi-1/IPTV · 湖北移动rtsp.m3u",
+    "url": "https://raw.githubusercontent.com/kakaxi-1/IPTV/main/%E6%B9%96%E5%8C%97%E7%A7%BB%E5%8A%A8rtsp.m3u",
+    "source_project": "kakaxi-1/IPTV",
+    "source_url": "https://github.com/kakaxi-1/IPTV/blob/main/%E6%B9%96%E5%8C%97%E7%A7%BB%E5%8A%A8rtsp.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "skddyj/iptv · IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/skddyj/iptv/main/IPTV.m3u",
+    "source_project": "skddyj/iptv",
+    "source_url": "https://github.com/skddyj/iptv/blob/main/IPTV.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "balala2oo8/iptv · o.m3u",
+    "url": "https://raw.githubusercontent.com/balala2oo8/iptv/main/o.m3u",
+    "source_project": "balala2oo8/iptv",
+    "source_url": "https://github.com/balala2oo8/iptv/blob/main/o.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "akiralereal/iptv · IPTV-overseas.m3u",
+    "url": "https://raw.githubusercontent.com/akiralereal/iptv/main/IPTV-overseas.m3u",
+    "source_project": "akiralereal/iptv",
+    "source_url": "https://github.com/akiralereal/iptv/blob/main/IPTV-overseas.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  },
+  {
+    "name": "akiralereal/iptv · IPTV.m3u",
+    "url": "https://raw.githubusercontent.com/akiralereal/iptv/main/IPTV.m3u",
+    "source_project": "akiralereal/iptv",
+    "source_url": "https://github.com/akiralereal/iptv/blob/main/IPTV.m3u",
+    "grouping": "同项目不同清单",
+    "notes": "来源为作者公开仓库；不同列表频道可能重合"
+  }
+]

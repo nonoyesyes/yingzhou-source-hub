@@ -1,0 +1,242 @@
+[
+  {
+    "source_original_id": "039",
+    "name": "Beautiful Life TV",
+    "url": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 25,
+      "exact_line": "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8"
+    },
+    "candidate_id": "pilot-01"
+  },
+  {
+    "source_original_id": "039",
+    "name": "浙江卫视",
+    "url": "http://zwebl02.cztv.com/live/channel01720Pnew.m3u8?auth_key=1793823716-824f6eef3e876d8718c59bba59576d8d-0-e398235e86e1003617bb00be0b7f84b5",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 89,
+      "exact_line": "http://zwebl02.cztv.com/live/channel01720Pnew.m3u8?auth_key=1793823716-824f6eef3e876d8718c59bba59576d8d-0-e398235e86e1003617bb00be0b7f84b5"
+    },
+    "candidate_id": "pilot-02"
+  },
+  {
+    "source_original_id": "039",
+    "name": "湖南卫视",
+    "url": "http://120.196.232.43:8088/rrs03.hw.gmcc.net/PLTV/651/224/3221226698/1.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 3,
+      "exact_line": "http://120.196.232.43:8088/rrs03.hw.gmcc.net/PLTV/651/224/3221226698/1.m3u8"
+    },
+    "candidate_id": "pilot-03"
+  },
+  {
+    "source_original_id": "039",
+    "name": "澳门卫视",
+    "url": "http://61.244.22.4/ch1/ch1.live/playlist.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 5,
+      "exact_line": "http://61.244.22.4/ch1/ch1.live/playlist.m3u8"
+    },
+    "candidate_id": "pilot-04"
+  },
+  {
+    "source_original_id": "039",
+    "name": "Pet Club TV",
+    "url": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 7,
+      "exact_line": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-petclub-samsungnz/playlist.m3u8"
+    },
+    "candidate_id": "pilot-05"
+  },
+  {
+    "source_original_id": "039",
+    "name": "Bloomberg TV Asia",
+    "url": "http://210.210.155.37/dr9445/h/h03/index.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 9,
+      "exact_line": "http://210.210.155.37/dr9445/h/h03/index.m3u8"
+    },
+    "candidate_id": "pilot-06"
+  },
+  {
+    "source_original_id": "039",
+    "name": "KIX",
+    "url": "http://210.210.155.37/dr9445/h/h07/index.m3u8",
+    "source_snapshot_sha256": "3c2e02e6106c16830b9057e02df12f082cc27a2fbd6c669c0c0ab9e6cd82a603",
+    "raw_path": "raw/http_001.bin",
+    "locator": {
+      "line_1_based": 11,
+      "exact_line": "http://210.210.155.37/dr9445/h/h07/index.m3u8"
+    },
+    "candidate_id": "pilot-07"
+  },
+  {
+    "source_original_id": "090",
+    "name": "ABN China (720p)",
+    "url": "https://mediaserver.abnvideos.com/streams/abnchina.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 3,
+      "exact_line": "https://mediaserver.abnvideos.com/streams/abnchina.m3u8"
+    },
+    "candidate_id": "pilot-08"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Ando TV (1080p)",
+    "url": "http://play.kankanlive.com/live/1711956137852982.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 5,
+      "exact_line": "http://play.kankanlive.com/live/1711956137852982.m3u8"
+    },
+    "candidate_id": "pilot-09"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Angel TV Chinese (720p)",
+    "url": "https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_all/playlist.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 7,
+      "exact_line": "https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_all/playlist.m3u8"
+    },
+    "candidate_id": "pilot-10"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Anhui TV",
+    "url": "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 9,
+      "exact_line": "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8"
+    },
+    "candidate_id": "pilot-11"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Anshun Comprehensive News Channel",
+    "url": "https://hplayer1.juyun.tv/camera/154379194.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 11,
+      "exact_line": "https://hplayer1.juyun.tv/camera/154379194.m3u8"
+    },
+    "candidate_id": "pilot-12"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Baicheng TV [Geo-blocked]",
+    "url": "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 13,
+      "exact_line": "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8"
+    },
+    "candidate_id": "pilot-13"
+  },
+  {
+    "source_original_id": "090",
+    "name": "Beijing Satellite TV [Not 24/7]",
+    "url": "http://ivi.bupt.edu.cn/hls/btv1.m3u8",
+    "source_snapshot_sha256": "2cc5438ac58f49dc18657a93f51e9efc7d4fadc64d801d721bb51d867ef66745",
+    "raw_path": "raw/http_002.bin",
+    "locator": {
+      "line_1_based": 15,
+      "exact_line": "http://ivi.bupt.edu.cn/hls/btv1.m3u8"
+    },
+    "candidate_id": "pilot-14"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "东方卫视",
+    "url": "http://58.248.112.205:8006/GD_CUCC/G_DONGFANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHfFI8ayEeoekFD8P08%2F7EXF4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 5,
+      "exact_line": "http://58.248.112.205:8006/GD_CUCC/G_DONGFANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHfFI8ayEeoekFD8P08%2F7EXF4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b"
+    },
+    "candidate_id": "pilot-15"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "浙江卫视",
+    "url": "http://58.248.112.205:8006/GD_CUCC/G_ZHEJIANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHdr3tmmw%2BL49D6e6Yw0TfYx4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 11,
+      "exact_line": "http://58.248.112.205:8006/GD_CUCC/G_ZHEJIANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHdr3tmmw%2BL49D6e6Yw0TfYx4NHMHVaPey3ntJx7niV8g&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b"
+    },
+    "candidate_id": "pilot-16"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "浙江卫视",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 61,
+      "exact_line": "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8"
+    },
+    "candidate_id": "pilot-17"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "北京卫视",
+    "url": "http://58.248.112.205:8006/GD_CUCC/G_BEIJING-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHX6pFJlsKFX2elUkY7G9WuYMgMwyeTsEM4M617I3YR8P&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 3,
+      "exact_line": "http://58.248.112.205:8006/GD_CUCC/G_BEIJING-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHX6pFJlsKFX2elUkY7G9WuYMgMwyeTsEM4M617I3YR8P&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b"
+    },
+    "candidate_id": "pilot-18"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "湖南卫视",
+    "url": "http://58.248.112.205:8006/GD_CUCC/G_HUNAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHRo9Db0sT8QFSkrF29I7qMlTsBzPp9x%2Bi0NFonroQm9c&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 7,
+      "exact_line": "http://58.248.112.205:8006/GD_CUCC/G_HUNAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHRo9Db0sT8QFSkrF29I7qMlTsBzPp9x%2Bi0NFonroQm9c&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b"
+    },
+    "candidate_id": "pilot-19"
+  },
+  {
+    "source_original_id": "NEW-051",
+    "name": "江苏卫视",
+    "url": "http://58.248.112.205:8006/GD_CUCC/G_JIANGSU-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHe%2BuH8HDFS0PtokY11nWnf4MgMwyeTsEM4M617I3YR8P&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b",
+    "source_snapshot_sha256": "6062d5524c6f20a1ada68cb2b17e620244bdfa953c473d56688be9edf590d751",
+    "raw_path": "raw/http_003.bin",
+    "locator": {
+      "line_1_based": 9,
+      "exact_line": "http://58.248.112.205:8006/GD_CUCC/G_JIANGSU-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2FtHe%2BuH8HDFS0PtokY11nWnf4MgMwyeTsEM4M617I3YR8P&p=GITV&area=GD_CUCC&mac=d4:38:44:a5:72:8b"
+    },
+    "candidate_id": "pilot-20"
+  }
+]
