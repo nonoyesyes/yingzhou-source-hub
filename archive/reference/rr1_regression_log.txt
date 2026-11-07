@@ -4,6 +4,6 @@ test_positive_vectors (__main__.RR1Tests.test_positive_vectors) ... ok
 test_url_is_not_normalized (__main__.RR1Tests.test_url_is_not_normalized) ... ok
 
 ----------------------------------------------------------------------
-Ran 4 tests in 2.195s
+Ran 4 tests in 2.032s
 
 OK

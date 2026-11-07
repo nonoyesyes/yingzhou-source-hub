@@ -1497,10 +1497,28 @@
                   },
                   "required": [
                     "kind",
-                    "role",
                     "value"
                   ],
-                  "additionalProperties": false
+                  "additionalProperties": false,
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "const": "line_range"
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "role"
+                        ]
+                      }
+                    }
+                  ]
                 },
                 "epg_url_raw": {
                   "anyOf": [
@@ -2072,6 +2090,55 @@
                           },
                           "url": {
                             "type": "string"
+                          },
+                          "reference": {
+                            "type": "object",
+                            "properties": {
+                              "pointer": {
+                                "type": "string"
+                              },
+                              "raw_value": {
+                                "type": "string"
+                              },
+                              "base_url": {
+                                "type": "string"
+                              },
+                              "resolved_url": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "resolution_status": {
+                                "enum": [
+                                  "absolute",
+                                  "relative_resolved",
+                                  "unsupported_scheme_or_runtime_reference",
+                                  "not_a_url_reference"
+                                ]
+                              },
+                              "status": {
+                                "const": "not_fetched"
+                              }
+                            },
+                            "required": [
+                              "pointer",
+                              "raw_value",
+                              "base_url",
+                              "resolved_url",
+                              "resolution_status",
+                              "status"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "display_metadata": {
+                            "type": "object"
+                          },
+                          "request_conditions": {
+                            "type": "object"
+                          },
+                          "error": {
+                            "type": "string"
                           }
                         },
                         "required": [
@@ -2084,6 +2151,57 @@
                       "type": "integer",
                       "minimum": 0,
                       "description": "Nonnegative count."
+                    },
+                    "sites_item_count": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "lives_config_count": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "reference_values": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "pointer": {
+                            "type": "string"
+                          },
+                          "raw_value": {
+                            "type": "string"
+                          },
+                          "base_url": {
+                            "type": "string"
+                          },
+                          "resolved_url": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "resolution_status": {
+                            "enum": [
+                              "absolute",
+                              "relative_resolved",
+                              "unsupported_scheme_or_runtime_reference",
+                              "not_a_url_reference"
+                            ]
+                          },
+                          "status": {
+                            "const": "not_fetched"
+                          }
+                        },
+                        "required": [
+                          "pointer",
+                          "raw_value",
+                          "base_url",
+                          "resolved_url",
+                          "resolution_status",
+                          "status"
+                        ],
+                        "additionalProperties": false
+                      }
                     }
                   },
                   "required": [

@@ -41,36 +41,12 @@ def exact_coverage(declared,intervals,target=None,success=False):
  require(type(declared) is int and declared==interval_floor(intervals),'coverage must equal floor of interval union')
  if success:require(target is not None and declared>=target,'target not reached')
 
-def clean_jsonc(t):
- # Strip comments/trailing commas outside strings, while preserving original bytes in archive.
- out=[];i=0;q=False;esc=False
- while i<len(t):
-  c=t[i]
-  if q:
-   out.append(c)
-   if esc:esc=False
-   elif c=='\\':esc=True
-   elif c=='"':q=False
-   i+=1;continue
-  if c=='"':q=True;out.append(c);i+=1;continue
-  if t[i:i+2]=='//':
-   j=t.find('\n',i);i=len(t) if j<0 else j;continue
-  if t[i:i+2]=='/*':
-   j=t.find('*/',i+2)
-   if j<0:raise ValueError('unterminated comment')
-   i=j+2;out.append(' ');continue
-  if c==',':
-   j=i+1
-   while j<len(t) and t[j].isspace():j+=1
-   if j<len(t) and t[j] in '}]':i+=1;continue
-  out.append(c);i+=1
- return ''.join(out)
+from static_parser import clean_jsonc,load_jsonc
 
 @lru_cache(maxsize=256)
 def json_document(raw):
  text=raw.decode('utf-8-sig')
- try:return json.loads(text)
- except ValueError:return json.loads(clean_jsonc(text))
+ return load_jsonc(text)[0]
 def json_located(raw,pointer):
  obj=json_document(raw)
  for tok in pointer.split('/')[1:] if pointer else []:

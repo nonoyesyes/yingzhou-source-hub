@@ -1,0 +1,23 @@
+test_actual_1230_group_records_reassessed (__main__.ParserRegressions.test_actual_1230_group_records_reassessed) ... ok
+test_actual_epg_logo_relative_dependencies (__main__.ParserRegressions.test_actual_epg_logo_relative_dependencies) ... ok
+test_bom_whitespace_comments_detected (__main__.ParserRegressions.test_bom_whitespace_comments_detected) ... ok
+test_four_actual_jsonc_sites_and_lives (__main__.ParserRegressions.test_four_actual_jsonc_sites_and_lives) ... ok
+test_group_is_display_and_preserved (__main__.ParserRegressions.test_group_is_display_and_preserved) ... ok
+test_proxy_and_subscription_are_not_direct_complete_requests (__main__.ParserRegressions.test_proxy_and_subscription_are_not_direct_complete_requests) ... ok
+test_real_unknown_conditions_not_cleared (__main__.ParserRegressions.test_real_unknown_conditions_not_cleared) ... ok
+test_string_comment_markers_and_escapes_exact (__main__.ParserRegressions.test_string_comment_markers_and_escapes_exact) ... ok
+test_trailing_comma_not_repaired (__main__.ParserRegressions.test_trailing_comma_not_repaired) ... ok
+test_unterminated_comment_rejected (__main__.ParserRegressions.test_unterminated_comment_rejected) ... ok
+test_all_baseline_live_origins_values_preserved (__main__.RebuiltFeedRegressions.test_all_baseline_live_origins_values_preserved) ... ok
+test_all_baseline_vod_origins_values_preserved (__main__.RebuiltFeedRegressions.test_all_baseline_vod_origins_values_preserved) ... ok
+test_checks_observed_facts_unchanged (__main__.RebuiltFeedRegressions.test_checks_observed_facts_unchanged) ... ok
+test_group_fixed_origins_rr1_and_regrouping (__main__.RebuiltFeedRegressions.test_group_fixed_origins_rr1_and_regrouping) ... ok
+test_immutable_archives_and_snapshot_hashes (__main__.RebuiltFeedRegressions.test_immutable_archives_and_snapshot_hashes) ... ok
+test_original_inventory_unchanged (__main__.RebuiltFeedRegressions.test_original_inventory_unchanged) ... ok
+test_reader_needs_only_feed_not_archive_business_data (__main__.RebuiltFeedRegressions.test_reader_needs_only_feed_not_archive_business_data) ... ok
+test_rebuilt_four_sources_accounted (__main__.RebuiltFeedRegressions.test_rebuilt_four_sources_accounted) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.919s
+
+OK
