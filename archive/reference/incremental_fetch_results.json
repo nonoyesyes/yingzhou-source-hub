@@ -1,0 +1,41 @@
+{
+  "scope": "version-first configuration fetch optimization",
+  "offline_regression": {
+    "command": "python archive/reference/test_incremental_fetch.py",
+    "passed": 32,
+    "failed": 0,
+    "network": "fake transports only"
+  },
+  "bounded_live_verification": [
+    {
+      "source_id": "source:059",
+      "status": "reused_blob_sha",
+      "content_downloaded": false,
+      "note": "Final implementation uses Git metadata and validates retained bytes."
+    },
+    {
+      "source_id": "source:090",
+      "status": "blocked_or_failed",
+      "reason": "DNS resolution unavailable in execution environment",
+      "note": "No HTTP validator interoperability claim. Offline 304/cache/error cases passed."
+    }
+  ],
+  "first_probe": {
+    "source_id": "source:059",
+    "status": "downloaded_unchanged",
+    "note": "Before bootstrap improvement, missing historical Git SHA caused one configuration download; final version derives Git blob SHA from verified local bytes. No media request."
+  },
+  "limitations": [
+    "No full repeat collection was performed.",
+    "Conditional HTTP savings depend on server validators; no-validator or ignored-validator endpoints still download.",
+    "No source/media quality test.",
+    "New bodies need independent safety approval and ingestion before reusable state is persisted."
+  ],
+  "existing_regressions": {
+    "parser_rebuild": 18,
+    "feed_boundaries": 17,
+    "rr1_methods": 4,
+    "rr1_positive_vectors": 7,
+    "rr1_invalid_vectors": 21
+  }
+}
