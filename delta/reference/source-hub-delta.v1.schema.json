@@ -1,0 +1,377 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source-hub-delta.v1.schema.json",
+  "$defs": {
+    "index": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "source-hub-delta.v1"
+        },
+        "baseline": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "byte_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "baseline_id": {
+              "type": "string"
+            },
+            "state_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "git_commit": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{40}$"
+            },
+            "feed_schema_version": {
+              "const": "source-hub-feed.v1"
+            }
+          },
+          "required": [
+            "path",
+            "byte_count",
+            "sha256",
+            "baseline_id",
+            "state_sha256",
+            "git_commit",
+            "feed_schema_version"
+          ],
+          "additionalProperties": false
+        },
+        "latest_sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "batches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "byte_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "sequence": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "path",
+              "byte_count",
+              "sha256",
+              "sequence"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "baseline",
+        "latest_sequence",
+        "batches"
+      ],
+      "additionalProperties": false
+    },
+    "manifest": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "source-hub-delta.v1"
+        },
+        "baseline_id": {
+          "type": "string"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "previous_batch_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "before_state_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "after_state_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "metadata_after": {
+          "type": "object"
+        },
+        "order_after": {
+          "type": "object",
+          "properties": {
+            "original_inventory": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "live_entries": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "vod_sites": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "checks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "environments": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "archive_files": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "original_inventory",
+            "sources",
+            "live_entries",
+            "vod_sites",
+            "checks",
+            "environments",
+            "archive_files"
+          ],
+          "additionalProperties": false
+        },
+        "operation_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "byte_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "operation_count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "path",
+              "byte_count",
+              "sha256",
+              "operation_count"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "baseline_id",
+        "sequence",
+        "previous_batch_sha256",
+        "before_state_sha256",
+        "after_state_sha256",
+        "metadata_after",
+        "order_after",
+        "operation_count",
+        "parts"
+      ],
+      "additionalProperties": false
+    },
+    "part": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "source-hub-delta.v1"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "collection": {
+                    "enum": [
+                      "original_inventory",
+                      "sources",
+                      "live_entries",
+                      "vod_sites",
+                      "checks",
+                      "environments",
+                      "archive_files"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "before_sha256": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "operation": {
+                    "const": "upsert"
+                  },
+                  "value": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "collection",
+                  "key",
+                  "before_sha256",
+                  "operation",
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "collection": {
+                    "enum": [
+                      "original_inventory",
+                      "sources",
+                      "live_entries",
+                      "vod_sites",
+                      "checks",
+                      "environments",
+                      "archive_files"
+                    ]
+                  },
+                  "key": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "before_sha256": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "operation": {
+                    "const": "retract"
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "collection",
+                  "key",
+                  "before_sha256",
+                  "operation",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "sequence",
+        "operations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/index"
+    },
+    {
+      "$ref": "#/$defs/manifest"
+    },
+    {
+      "$ref": "#/$defs/part"
+    }
+  ]
+}
