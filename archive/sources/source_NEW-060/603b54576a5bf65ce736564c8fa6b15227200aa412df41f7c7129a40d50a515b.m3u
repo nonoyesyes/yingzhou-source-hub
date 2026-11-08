@@ -1,0 +1,120 @@
+#EXTM3U
+#EXT-X-APP APTV
+
+# === BEGIN 直连源 ===
+#EXTINF:-1 group-title="卫视",湖南卫视4K
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 group-title="卫视",浙江卫视4K
+http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="体育",纬来体育
+https://hlsz.yjjcfw.com/live/vl.m3u8?expire=1786948372&sign=2e4a56b89fe644db147552011f972714
+# === END 直连源 ===
+
+# === BEGIN 亚太旧源直连复核保留 ===
+# 说明：以下频道已绕过 VPN 复核根地址与实际媒体数据；不可直连、明显不稳定及旧式 RTMP 源已清理。
+#EXTINF:-1 tvg-name="公视" tvg-logo="" group-title="台湾",公视高清
+http://211.72.174.95:8116/0.ts
+#EXTINF:-1 tvg-name="民视" tvg-logo="" group-title="台湾",民视高清
+http://211.72.174.95:8115/0.ts
+#EXTINF:-1 tvg-name="台视" tvg-logo="" group-title="台湾",台视高清
+http://211.72.174.95:8112/0.ts
+#EXTINF:-1 group-title="台湾",TVBS亚洲
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+# === END 亚太旧源直连复核保留 ===
+
+# === BEGIN 亚洲直播实验台已处理直连源 ===
+# 说明：以下频道均由 asian-live-lab 筛选并按直连方式验证，使用固定原始 HLS 地址。
+# 维护：此区块与上方原有精选频道分开；YTN News、NHK World 属于动态源，保留在“亚洲与国际直播”模块。
+# 实验台备注：香港粤语财经直播，单档 576p
+#EXTINF:-1 group-title="香港",耀才财经
+https://v3.mediacast.hk/webcast/bshdlive-pc/playlist.m3u8
+# 实验台备注：英语宠物生活与纪实频道，最高 1080p；直接用 1080p 档，免得播放器从最低档起播
+#EXTINF:-1 group-title="宠物",Pet Club TV
+https://petclub-samsungaus.amagi.tv/playlist1080p.m3u8
+# 实验台备注：Plex 官方授权分发的英语野生动物直播频道，1080p
+#EXTINF:-1 group-title="文旅",WildEarth
+https://wildearth-plex.amagi.tv/masterR1080p.m3u8
+# 实验台备注：英语自然纪实频道，单档 2160p / 29.97fps HEVC
+#EXTINF:-1 tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/479fe0d11f3f5132a3f36b617547da3b/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1738776545554_LoveNature_logos_HUB_Centered.png" group-title="文旅",Love Nature 4K
+https://pb-ehs1glsha1juy.akamaized.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ehs1glsha1juy/f2141f37-1f48-475b-ba54-b9efb62346db/0.m3u8
+# 实验台备注：CGTN 英语纪录频道，最高 1080p
+#EXTINF:-1 group-title="文旅",CGTN Documentary
+https://english-livebkali.cgtn.com/live/doccgtn.m3u8
+# 实验台备注：新加坡英语亚洲新闻频道，最高 1080p；直接用 1080p 档，免得播放器从最低档起播
+# 过渡：新镜像改由「亚洲与国际直播」模块提供（官方主清单、最高档在前、能降档），这一条在新镜像里会被收掉，
+#       留给没升级的部署；多数部署升级后删
+#EXTINF:-1 group-title="国际",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+# 实验台备注：路透英语国际新闻直播，固定 1080p / 29.97fps
+#EXTINF:-1 tvg-logo="https://provider-static.plex.tv/epg/cms/production/8cf9c131-2d92-4d91-86b1-22ef458d703f/reuters_reutersnow_1RDX.png" group-title="国际",Reuters
+https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/e7493ea5-5c1c-4d7a-a3f7-e95516048ad8/3.m3u8
+# 实验台备注：法语国际新闻高码率直播
+# 过渡：新镜像改由「亚洲与国际直播」模块提供（1080p 在前、360p 兜底），这一条在新镜像里会被收掉，
+#       留给没升级的部署；多数部署升级后删
+#EXTINF:-1 group-title="国际",France 24 Français
+https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
+# 实验台备注：英语国际新闻高码率直播
+# 过渡：新镜像改由「亚洲与国际直播」模块提供（1080p 在前、360p 兜底），这一条在新镜像里会被收掉，
+#       留给没升级的部署；多数部署升级后删
+#EXTINF:-1 group-title="国际",France 24 English
+https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
+# 实验台备注：英语职业扑克赛事频道，最高 1080p
+# 过渡：新镜像改由「亚洲与国际直播」模块提供（官方主清单、最高档在前、能降档），这一条在新镜像里会被收掉，
+#       留给没升级的部署；多数部署升级后删
+#EXTINF:-1 group-title="体育",World Poker Tour
+https://amg00477-samsungelectron-worldpokertour-samsunguk-81igb.amagi.tv/playlist/amg00477-samsungelectron-worldpokertour-samsunguk/playlist.m3u8
+# 实验台备注：NHL 官方免费内容频道，不是付费线性频道 NHL Network
+#EXTINF:-1 group-title="体育",NHL FAST
+https://nhl-firetv.amagi.tv/playlist1080p.m3u8
+# 实验台备注：Xumo 官方 UFC FAST 频道，主要播放经典比赛、回放及专题，不包含当期付费赛事
+#EXTINF:-1 tvg-logo="https://d1biytugnv36sr.cloudfront.net/resize?width=400&height=200&url=https://static.frequency.com/studio/ufc/channels/ufc-domestic400x200.png" group-title="体育",UFC 24/7
+https://dbrb49pjoymg4.cloudfront.net/manifest/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/194a140c-0cf5-443e-b747-08bf621d75a8/0.m3u8
+# 实验台备注：中国旅行与风光频道，最高 1080p
+#EXTINF:-1 group-title="文旅",China Travel
+https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8
+# 实验台备注：台湾闽南语综合频道，单档 HTTP 直播
+#EXTINF:-1 group-title="台湾",大立电视台
+http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+# === END 亚洲直播实验台已处理直连源 ===
+
+# === BEGIN 苏州广电直连源 ===
+# 说明：苏州广播电视总台「看苏州」App 用的固定 HLS 地址，不带签名，播放器直连官方 CDN（issue #149，2026-09-29 大陆与美国探针实测可播）。
+# 1～5 套名称按看苏州 App 频道表；苏州4K 官方名「SBS影像长廊」（台里自制纪录片轮播，3840x2160）。旧地址 tylive.kan0512.com 曾两次失效，改用 App 现用的同一 CDN。
+#EXTINF:-1 group-title="江苏",苏州新闻综合
+https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+#EXTINF:-1 group-title="江苏",苏州社会经济
+https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
+#EXTINF:-1 group-title="江苏",苏州文化生活
+https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
+#EXTINF:-1 group-title="江苏",苏州电影娱乐
+https://live-auth.51kandianshi.com/szgd/csztv4.m3u8
+#EXTINF:-1 group-title="江苏",苏州生活资讯
+https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
+#EXTINF:-1 group-title="江苏",苏州4K
+https://live-auth.51kandianshi.com/szgd/csztv4k_4k.m3u8
+# === END 苏州广电直连源 ===
+
+# === BEGIN 德化融媒体直连源 ===
+# 说明：德化县融媒体中心官网「瓷都德化新闻网」在线直播页（dehuanews.cn/plus/view-1175-0.html）写死的固定 HLS 地址，不带签名、不看 Referer 与 UA，播放器直连福建广电网络 CDN（2026-09-30 大陆与美国探针实测可播，1080p/25fps 约 3.3M）。
+# 官网没有节目单；台标用融媒体中心站标，收在内置台标库。
+#EXTINF:-1 group-title="福建",德化电视台
+https://play.cmptp.fjgdwl.com/live/63a563ec75764af588f3215b0afa2588.m3u8
+# === END 德化融媒体直连源 ===
+
+# === BEGIN 西宁广电直连源 ===
+# 说明：西宁广播电视台官网「西宁网络电视台」新闻综合直播页（www.xntv.tv/xnxwpd）写死的固定 HLS 地址，不带签名、不看 Referer 与 UA，播放器直连官方 CDN（2026-10-08 实测 1080p/25fps、H.264/AAC 约 2.2M，Globalping 大陆、香港、东京、新加坡、美国、德国探针都能取到清单）。
+# 生活服务频道官网直播位已空（2026-04-20 停播）。官网没有节目单；台标收在内置台标库。issue #169。
+#EXTINF:-1 group-title="青海",西宁新闻综合
+https://liveout.xntv.tv/a65jur/96iln2.m3u8
+# === END 西宁广电直连源 ===
+
+# === BEGIN 青海市台官方直连源 ===
+# 来源：格尔木「望昆仑」、海东「爱上河湟」官方 App 的电视直播接口；2026-10-27 实测两路均为 1080p/25fps、H.264/AAC，清单和媒体分片持续更新，无需额外请求头。
+# 地址带官方长效 sign/t 参数，按接口原样保留；新版本的「青海」模块每天更新当前地址，并自动收掉本区块的同名精选条目。未升级的部署仍可直接播放本区块。
+# 格尔木节目单为全天「当日回放」占位、海东节目表为空，均无可用 EPG；官方台标已收入内置台标库。
+#EXTINF:-1 group-title="青海" catchup="none",格尔木新闻综合
+https://miku-live-hls-gemwkl-tv.geermurmt.cn/gemwkl-tv/xwzh.m3u8?sign=bd290c67d513b07aa49842b8aedd02c2&t=1876791311
+#EXTINF:-1 group-title="青海" catchup="none",海东综合频道
+https://hls-hdapp.hdhhy.cn/ashh-tv/zhds.m3u8?sign=26c873e6e3d94ba02aa78c0fbf326dfd&t=1886228277
+# === END 青海市台官方直连源 ===

@@ -1308,10 +1308,26 @@
           "epg_url_raw": {
             "anyOf": [
               {
-                "type": "null"
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
               },
               {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
               }
             ]
           },
@@ -1340,10 +1356,26 @@
           "logo_url_raw": {
             "anyOf": [
               {
-                "type": "null"
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
               },
               {
-                "type": "string"
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
               }
             ]
           },
@@ -1354,13 +1386,45 @@
                 "type": "string"
               },
               "epg_url_raw": {
-                "type": "string"
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "$value_ref": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "$value_ref"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
               },
               "group_raw": {
                 "type": "string"
               },
               "logo_url_raw": {
-                "type": "string"
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "$value_ref": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "$value_ref"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
               },
               "tvg_id_raw": {
                 "type": "string"
@@ -1523,10 +1587,26 @@
                 "epg_url_raw": {
                   "anyOf": [
                     {
-                      "type": "null"
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
                     },
                     {
-                      "type": "string"
+                      "type": "object",
+                      "properties": {
+                        "$value_ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "$value_ref"
+                      ],
+                      "additionalProperties": false
                     }
                   ]
                 },
@@ -1546,10 +1626,26 @@
                 "logo_url_raw": {
                   "anyOf": [
                     {
-                      "type": "null"
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
                     },
                     {
-                      "type": "string"
+                      "type": "object",
+                      "properties": {
+                        "$value_ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "$value_ref"
+                      ],
+                      "additionalProperties": false
                     }
                   ]
                 },
@@ -1603,7 +1699,23 @@
                   "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
                 },
                 "raw_ref": {
-                  "type": "string"
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "$value_ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "$value_ref"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
                 },
                 "source_id": {
                   "type": "string"
@@ -1630,6 +1742,63 @@
                       "type": "string"
                     }
                   ]
+                },
+                "request_provenance": {
+                  "anyOf": [
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "attribute": {
+                            "type": "string"
+                          },
+                          "kind": {
+                            "type": "string"
+                          },
+                          "locator": {
+                            "type": "object",
+                            "properties": {
+                              "line": {
+                                "type": "integer"
+                              },
+                              "type": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "line",
+                              "type"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "locator_ref": {
+                            "type": "string"
+                          },
+                          "path_ref": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "path_ref"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "$value_ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "$value_ref"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
                 }
               },
               "required": [
@@ -1643,7 +1812,23 @@
             "description": "Preserved source/measurement object; arbitrary JSON keys and values are retained, not executable instructions."
           },
           "raw_ref": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
+              }
+            ]
           },
           "region_code": {
             "anyOf": [
@@ -2573,7 +2758,23 @@
                   "type": "boolean"
                 },
                 "raw_ref": {
-                  "type": "string"
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "$value_ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "$value_ref"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
                 },
                 "source_id": {
                   "type": "string"
@@ -2593,7 +2794,23 @@
             }
           },
           "raw_ref": {
-            "type": "string"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "$value_ref": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "$value_ref"
+                ],
+                "additionalProperties": false
+              }
+            ]
           },
           "request_complete": {
             "type": "boolean"

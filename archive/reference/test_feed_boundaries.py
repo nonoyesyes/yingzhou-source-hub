@@ -4,6 +4,13 @@ from request_revision import request_revision
 from feed_common import expand_shared
 from read_feed import live_origins,request_provenance
 class Boundaries(unittest.TestCase):
+ def test_empty_name_preserved_unknown(self):
+  from normalize_names import normalize
+  row=normalize({'name_raw':'','group_raw':None})
+  self.assertEqual(row['name_normalized'],'');self.assertEqual(row['name_match_status'],'unknown');self.assertIsNone(row['channel_key_hint'])
+ def test_shared_string_metadata_lossless(self):
+  x={'shared_values':{'v1':'archive/sources/a.json','v2':'https://example.invalid/logo?a=1&b=2'},'raw_ref':{'$value_ref':'v1'},'raw_metadata':{'global_attributes':{'logo':{'$value_ref':'v2'}}}}
+  y=expand_shared(x);self.assertEqual(y['raw_ref'],'archive/sources/a.json');self.assertEqual(y['raw_metadata']['global_attributes']['logo'],'https://example.invalid/logo?a=1&b=2')
  def setUp(self):
   self.r={'method':'GET','url':'https://example.invalid/live?a=1&b=2','headers':{},'options':{}};self.t={'request':self.r,'request_complete':True,'request_revision':request_revision(self.r)}
  def check(self,changed,marked):

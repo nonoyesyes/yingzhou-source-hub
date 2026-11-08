@@ -61,3 +61,5 @@ Source snapshot `parse_result.sites_item_count` and `lives_config_count` are non
 `unparsed_items` may include `reference`, `display_metadata`, `request_conditions`, and a string `error` diagnostic. Ordinary JSON `group` is retained as display metadata/group_raw, not as an unresolved request option. Live configuration dependencies remain under `config_dependencies` and `unparsed_items`; proxy/subscription references are not media channels. Formerly retained proxy origins remain explicitly incomplete for information preservation.
 
 JSON-pointer origin locators require kind/value, not the line-only role field. A line_range origin still requires role. This corrects an inferred Schema restriction exposed when JSON origins join previously complete request groups.
+
+Repeated `raw_ref`, `logo_url_raw`, and `epg_url_raw` values can be objects containing exactly `$value_ref`, whose string value names an entry in `shared_values`. Nested metadata may also use this existing lossless reference format. The fixed reader resolves them before business processing; resolved types and null rules are unchanged. Empty raw names normalize to the empty string and remain unknown.

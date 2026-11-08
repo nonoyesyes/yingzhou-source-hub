@@ -36,12 +36,8 @@ def assemble(x,checks,env,batch_id,generated_at):
    target=exact[0]
    if target['request_complete'] and any(c.get(k) and request_revision(c[k])!=target['request_revision'] for k in ['planned_request','request_used']):c['request_variant_of']=target['request_revision']
   c['candidate_entry_ids']=[e['entry_id'] for e in matches]
- # Remap preserved checks to content-addressed, deduplicated retained snapshot files.
- snapshot_paths={}
- for source in x['sources']:
-  for snap in source['snapshots']:snapshot_paths[snap['sha256']]=snap['path']
- for c in checks:
-  if c.get('source_snapshot_sha256') in snapshot_paths:c['source_snapshot_ref']=snapshot_paths[c['source_snapshot_sha256']]
+ # Existing check snapshot bindings are historical facts. New material with the
+ # same SHA cannot retroactively fill a missing binding or change its custody.
  # Explicit machine-readable not-tested scope, without inventing check records.
  linked=collections.defaultdict(list)
  for c in checks:
@@ -125,15 +121,15 @@ def assemble(x,checks,env,batch_id,generated_at):
  f['deduplication']={'live':'identical_complete_rr1; incomplete_requests_never_merged','vod':'identical_static_site_dependencies_and_relative_base','origins':'field_overlay_on_primary; explicit_values_override; absent_fields_inherit'}
  # Intern repeated non-request objects within this same JSON document. Core
  # playback, naming and identity fields remain inline; no archive lookup needed.
- POOL_FIELDS={'raw_metadata','metadata_status','normalization_basis','normalization_null_reasons','request_provenance','unparsed_dependencies','request_incomplete_reasons','site_raw','incomplete_reasons'}
+ POOL_FIELDS={'raw_metadata','metadata_status','normalization_basis','normalization_null_reasons','request_provenance','unparsed_dependencies','request_incomplete_reasons','site_raw','incomplete_reasons','global_attributes','epg_url_raw','logo_url_raw','raw_ref'}
  counts=collections.Counter();values={}
  def gather(obj):
   if isinstance(obj,dict):
    for k,v in obj.items():
-    if k in POOL_FIELDS and isinstance(v,(dict,list)):
+    if k in POOL_FIELDS and isinstance(v,(dict,list,str)):
      text=json.dumps(v,ensure_ascii=False,sort_keys=True,separators=(',',':'))
      if len(text.encode())>60:counts[text]+=1;values[text]=v
-    else:gather(v)
+    gather(v)
   elif isinstance(obj,list):
    for v in obj:gather(v)
  gather(f);shared={};mapping={}
@@ -143,9 +139,10 @@ def assemble(x,checks,env,batch_id,generated_at):
  def intern(obj):
   if isinstance(obj,dict):
    for k,v in list(obj.items()):
-    if k in POOL_FIELDS and isinstance(v,(dict,list)):
+    if k in POOL_FIELDS and isinstance(v,(dict,list,str)):
      text=json.dumps(v,ensure_ascii=False,sort_keys=True,separators=(',',':'))
      if text in mapping:obj[k]={'$value_ref':mapping[text]}
+     else:intern(v)
     else:intern(v)
   elif isinstance(obj,list):
    for v in obj:intern(v)

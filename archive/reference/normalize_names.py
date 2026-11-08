@@ -20,7 +20,7 @@ def normalize(e):
  key=ALIASES.get(token(name)) or ALIASES.get(token(clean));status='matched' if key else 'unknown'
  if re.fullmatch(r'(?:Anhui|Beijing|Hunan|Zhejiang|Guangdong|Jiangsu)\s*TV',clean,re.I) or re.fullmatch(r'CCTV[- ]?4\s*(?:欧洲|美洲|亚洲|Europe|America|Asia).*',clean,re.I):status='ambiguous';key=None
  v=REGISTRY.get(key,{})
- e.update(name_normalized=v.get('name',name or None),channel_key_hint=key,name_match_status=status,content_identity_status='not_tested')
+ e.update(name_normalized=v.get('name',name),channel_key_hint=key,name_match_status=status,content_identity_status='not_tested')
  category=v.get('category');basis='channel_alias_registry.v1' if category else None
  if not category and e.get('group_raw') in GROUPS:category=GROUPS[e['group_raw']];basis='exact_group_dictionary.v1'
  e.update(category=category,country_code=v.get('country'),region_code=v.get('region'),language_code=v.get('language'))
