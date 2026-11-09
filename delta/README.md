@@ -27,6 +27,8 @@ With a local checkout containing the referenced files:
 
 ## Producer workflow
 
+This is the current producer workflow. The archived [INCREMENTAL_FETCH.md](../archive/reference/INCREMENTAL_FETCH.md) predates delta delivery and is itself listed, with its byte count and hash, in the frozen baseline's `archive_files`; keep it unchanged. Its statement that `feed.json` is the Mac daily input and its repository-root fetch/accept/rebuild and cache-persistence instructions are historical and superseded here. Its acquisition [fetch policy](../archive/reference/INCREMENTAL_FETCH.md#fetch-policy) remains applicable; it does not authorize the old root-based workflow. Use the staging commands and external mutable cache below, not the archived command examples.
+
 Never run `rebuild_feed.py` or `incremental_fetch.py` with the repository root after migration: they read or overwrite root `feed.json`. Do not modify the frozen baseline or immutable referenced archive bytes. Use an outside-repository staging root and the **materialized latest state** instead:
 
 1. Fetch latest main normally; verify access and existing worktree. Create fresh outside-repository staging from the latest delta state with the maintained entry point:
@@ -38,7 +40,7 @@ Never run `rebuild_feed.py` or `incremental_fetch.py` with the repository root a
 
        PYTHONDONTWRITEBYTECODE=1 python /repo/archive/reference/incremental_fetch.py --root /work/run --state .fetch_state.json fetch --staging /work/downloads --source-id <registered-source-id>
 
-   Resolve the enabled entries from the saved project/entry registry and repeat `--source-id` for that authorized set; do not treat every retained historical/dependency URL as permission for a new fetch. Follow `INCREMENTAL_FETCH.md`: version-first GitHub blob SHA, verified-cache reuse, conditional HTTP fallback. Only registered source/config acquisition is allowed. No media/EPG/logo access or third-party code execution. Quarantined sources remain excluded.
+   Resolve the enabled entries from the saved project/entry registry and repeat `--source-id` for that authorized set; do not treat every retained historical/dependency URL as permission for a new fetch. Follow the archived [fetch policy](../archive/reference/INCREMENTAL_FETCH.md#fetch-policy): version-first GitHub blob SHA, verified-cache reuse, conditional HTTP fallback. Only registered source/config acquisition is allowed. No media/EPG/logo access or third-party code execution. Quarantined sources remain excluded.
 3. Inspect newly downloaded bytes for publication safety. Create a review file bound to the exact bytes, not a blanket approval:
 
        {"schema_version":"source-hub-safety-review.v1","decisions":[{"source_id":"source:...","sha256":"<64 lower-case hex>","decision":"publish","reason":"reviewed_public_configuration"}]}
